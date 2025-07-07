@@ -6,7 +6,7 @@ import {
 	defenceItemSchema,
 	shieldItemSchema,
 	weaponItemSchema,
-} from "../types/Item";
+} from "../types/item";
 
 // 共通
 const outDir = path.join(__dirname, "../../assets/schemas");
