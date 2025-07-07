@@ -1,0 +1,52 @@
+{
+	"name": "moe-equipment-assets",
+	"version": "1.0.0",
+	"main": "index.js",
+	"types": "dist/types/index.d.ts",
+	"exports": {
+		".": {
+			"import": "./index.js",
+			"require": "./index.js",
+			"types": "./dist/types/index.d.ts"
+		},
+		"./assets/*": "./assets/*",
+		"./schemas/*": "./assets/schemas/*",
+		"./types/*": "./dist/types/*"
+	},
+	"files": [
+		"assets/",
+		"assets/schemas/",
+		"dist/types/",
+		"index.js",
+		"index.d.ts"
+	],
+	"scripts": {
+		"prepare": "husky",
+		"lint": "biome lint --write src",
+		"format": "biome format --write src ",
+		"correct": "biome check --write src",
+		"validation:src": "biome ci src",
+		"validation:json": "jsonschema validate assets/schemas/shields.schema.json assets/shields.json && jsonschema validate assets/schemas/weapons.schema.json assets/weapons.json && jsonschema validate assets/schemas/defences.schema.json assets/defences.json && jsonschema validate assets/schemas/buffs.schema.json assets/buffs.json",
+		"validation": "run-s validation:*",
+		"tsc": "tsc --noEmit --skipLibCheck false",
+		"tsc-watch": "tsc --noEmit --skipLibCheck false --watch",
+		"build": "run-s build:*",
+		"build:schemas": "tsx src/scripts/generate-json-schemas.ts && biome check --write assets",
+		"build:types": "tsc -p tsconfig.build.json",
+		"pre-push": "run-s build validation tsc"
+	},
+	"author": "",
+	"license": "ISC",
+	"description": "",
+	"devDependencies": {
+		"@biomejs/biome": "^2.0.6",
+		"@sourcemeta/jsonschema": "^9.6.1",
+		"@types/node": "^24.0.10",
+		"husky": "^9.1.7",
+		"jsonschema": "^1.5.0",
+		"npm-run-all": "^4.1.5",
+		"tsx": "^4.20.3",
+		"typescript": "^5.8.3",
+		"zod-to-json-schema": "^3.24.6"
+	}
+}
