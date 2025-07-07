@@ -177,6 +177,7 @@ export const STATUS_UP_CALC_METHODS = {
 	ピッキング失敗回数補正: "add",
 	ピッキング回転速度補正: "add",
 	攻撃範囲増加: "add", // 確認済み
+	スペル短縮: "add",
 } satisfies Record<
 	(typeof EFFECT_SUBJECTS)[number]["_type"],
 	"add" | "multiply"

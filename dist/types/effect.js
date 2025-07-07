@@ -23,6 +23,7 @@ export const EFFECT_SUBJECTS = [
     z.literal("魔法ディレイ"),
     z.literal("クリティカル率"),
     z.literal("魔力"),
+    z.literal("スペル短縮"),
     z.literal("攻撃ディレイ"),
     z.literal("最大HP"),
     z.literal("最大MP"),

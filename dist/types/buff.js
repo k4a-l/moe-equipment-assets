@@ -171,6 +171,7 @@ export const STATUS_UP_CALC_METHODS = {
     ピッキング失敗回数補正: "add",
     ピッキング回転速度補正: "add",
     攻撃範囲増加: "add", // 確認済み
+    スペル短縮: "add",
 };
 // 全バフを体系化するのは大変なので文字列だけでも格納できれば後々なんとかなるだろうと...
 const otherBuffSchema = z.object({

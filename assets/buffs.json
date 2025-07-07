@@ -8949,21 +8949,63 @@
 	},
 	{
 		"name": "異界の魔力炉心",
-		"unedited": true,
-		"effects": [],
-		"description": ""
+		"effects": [
+			{
+				"type": "statusUp",
+				"subject": "最大MP",
+				"numberType": "percent",
+				"value": 15
+			},
+			{
+				"type": "technique",
+				"subject": "異界の魔力"
+			}
+		],
+		"description": "最大MPが15%上昇して、専用技『異界の魔力』が使用可能になる"
 	},
 	{
 		"name": "時の歯車",
-		"unedited": true,
-		"effects": [],
-		"description": ""
+		"effects": [
+			{
+				"type": "statusUp",
+				"subject": "魔力",
+				"numberType": "percent",
+				"value": 3
+			},
+			{
+				"type": "statusUp",
+				"subject": "スペル短縮",
+				"numberType": "percent",
+				"value": 20
+			},
+			{
+				"type": "technique",
+				"subject": "タイム エクステンション"
+			}
+		],
+		"description": "魔力と魔法の詠唱速度が上昇し、専用技『 タイム エクステンション]』が使用可能になる"
 	},
 	{
 		"name": "スペシャリテ",
-		"unedited": true,
-		"effects": [],
-		"description": ""
+		"effects": [
+			{
+				"type": "statusUp",
+				"subject": "耐全属性",
+				"numberType": "percent",
+				"value": 20
+			},
+			{
+				"type": "statusUp",
+				"subject": "ST自然回復",
+				"value": 41.5
+			},
+			{
+				"type": "statusUp",
+				"subject": "MP自然回復",
+				"value": 41.5
+			}
+		],
+		"description": "呪文抵抗力が20%上昇して、STとMPの自然回復量が増加する"
 	},
 	{
 		"name": "妖艶なオーラ",
@@ -8973,15 +9015,43 @@
 	},
 	{
 		"name": "強化の魔石",
-		"unedited": true,
-		"effects": [],
-		"description": ""
+		"effects": [
+			{
+				"type": "statusUp",
+				"subject": "魔力",
+				"value": 3,
+				"numberType": "percent"
+			},
+			{
+				"type": "statusUp",
+				"subject": "強化",
+				"value": 10
+			}
+		],
+		"description": "魔力と強化魔法の効果が上昇する"
 	},
 	{
 		"name": "エルフの加護",
-		"unedited": true,
-		"effects": [],
-		"description": ""
+		"effects": [
+			{
+				"type": "statusUp",
+				"subject": "魔力",
+				"value": 3,
+				"numberType": "percent"
+			},
+			{
+				"type": "statusUp",
+				"subject": "最大MP",
+				"value": 5,
+				"numberType": "percent"
+			},
+			{
+				"type": "statusUp",
+				"subject": "風属性効果率",
+				"value": 10
+			}
+		],
+		"description": "魔力と最大MPが上昇して、風属性のダメージが増加する"
 	},
 	{
 		"name": "和洋折衷",
