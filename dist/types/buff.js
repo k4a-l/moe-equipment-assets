@@ -1,6 +1,7 @@
 import z from "zod";
+import { strictFromEntries } from "@/utils/object";
 import { effectSubjectSchema, MANUFACTURE_PROCESS, } from "./effect";
-import { ALL_SKILLS, MANUFACTURE_SKILLS } from "./skill";
+import { ALL_SKILLS, BASE_SKILLS, MANUFACTURE_SKILLS, MASTERY_SKILLS, } from "./skill";
 // ------------------ バフ ------------------ //
 const statusUpBuffSchema = z.object({
     type: z.literal("statusUp"), // 効果の種類
@@ -37,6 +38,8 @@ const statusUpBuffSchema = z.object({
  */
 // TODO: 乗算のものはmultiplyにする
 export const STATUS_UP_CALC_METHODS = {
+    // ここからスキル系は全部加算
+    ...strictFromEntries([...BASE_SKILLS, ...MASTERY_SKILLS].map((skill) => [skill.value, "add"])),
     攻撃力: "add",
     命中: "add",
     物理与ダメージ: "add", // 確認済み
@@ -50,39 +53,6 @@ export const STATUS_UP_CALC_METHODS = {
     最大ST: "add",
     防御力: "add",
     回避: "add",
-    // ここからスキル系は全部加算
-    素手: "add",
-    刀剣: "add",
-    こんぼう: "add",
-    槍: "add",
-    銃器: "add",
-    弓: "add",
-    盾: "add",
-    投げ: "add",
-    牙: "add",
-    罠: "add",
-    キック: "add",
-    戦闘技術: "add",
-    酩酊: "add",
-    物まね: "add",
-    調教: "add",
-    破壊: "add",
-    回復: "add",
-    神秘: "add",
-    召喚: "add",
-    強化: "add",
-    死魔: "add",
-    魔法熟練: "add",
-    自然調和: "add",
-    暗黒命令: "add",
-    取引: "add",
-    シャウト: "add",
-    音楽: "add",
-    盗み: "add",
-    ギャンブル: "add",
-    パフォーマンス: "add",
-    ダンス: "add",
-    // ここまでスキル系は全部加算
     ペット経験値: "multiply", // 確認済み
     火属性効果: "add", // 確認済み
     水属性効果: "add", // 確認済み
@@ -253,7 +223,12 @@ const reflectionBuff = z.object({
 });
 const damageUpBuff = z.object({
     type: z.literal("damageUp"),
-    subject: z.union([z.literal("悪魔"), z.literal("巨人"), z.literal("鳥")]),
+    subject: z.union([
+        z.literal("悪魔"),
+        z.literal("巨人"),
+        z.literal("鳥"),
+        z.literal("アンデッド"),
+    ]),
     value: z.number(), // ％表記
 });
 const buffAssignBuff = z.object({

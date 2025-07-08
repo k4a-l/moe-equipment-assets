@@ -1,5 +1,5 @@
 import z from "zod";
-import { MANUFACTURE_SKILLS, MASTERY_SKILLS } from "./skill";
+import { BASE_SKILLS, MANUFACTURE_SKILLS, MASTERY_SKILLS } from "./skill";
 export const MANUFACTURE_PROCESS = [
     z.literal("ゲージ滑り"),
     z.literal("ゲージ速度"),
@@ -31,6 +31,7 @@ export const EFFECT_SUBJECTS = [
     z.literal("防御力"),
     z.literal("回避"),
     ...MASTERY_SKILLS,
+    ...BASE_SKILLS,
     z.literal("ペット経験値"),
     z.literal("火属性効果"),
     z.literal("水属性効果"),

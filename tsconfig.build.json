@@ -3,8 +3,8 @@
     "compilerOptions": {
         "declaration": true,
         "emitDeclarationOnly": false,
-        "outDir": "dist/types",
-        "rootDir": "src/types"
+        "outDir": "dist",
+        "rootDir": "src"
     },
     "include": [
         "src/types/**/*"

@@ -35,6 +35,7 @@
 		"tsc": "tsc --noEmit --skipLibCheck false",
 		"tsc-watch": "tsc --noEmit --skipLibCheck false --watch",
 		"build": "run-s build:*",
+		"build:clean": "rm -rf dist",
 		"build:schemas": "tsx src/scripts/generate-json-schemas.ts && biome check --write assets",
 		"build:types": "tsc -p tsconfig.build.json",
 		"pre-push": "run-s build validation tsc"
