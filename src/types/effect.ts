@@ -58,6 +58,8 @@ export const EFFECT_SUBJECTS = [
 	z.literal("最大重量"),
 	z.literal("所持重量"),
 	z.literal("ジャンプ力率"),
+	z.literal("落下速度率"),
+	z.literal("落下ダメージ率"),
 	z.literal("BREATH"),
 	...MANUFACTURE_SUBJECTS,
 	z.literal("キック命中率補正"),
@@ -75,6 +77,9 @@ export const EFFECT_SUBJECTS = [
 	z.literal("ピッキング失敗回数補正"),
 	z.literal("ピッキング回転速度補正"),
 	z.literal("攻撃範囲増加"),
+	z.literal("詠唱継続率"),
+	z.literal("伐採命中"),
+	z.literal("サイズ"),
 ] as const;
 
 export type EffectSubjectType = (typeof EFFECT_SUBJECTS)[number]["_type"];

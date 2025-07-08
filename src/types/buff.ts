@@ -10,7 +10,7 @@ import { ALL_SKILLS, MANUFACTURE_SKILLS } from "./skill";
 const statusUpBuffSchema = z.object({
 	type: z.literal("statusUp"), // 効果の種類
 	subject: effectSubjectSchema, // 効果対象
-	value: z.number(), // 効果値
+	value: z.union([z.number(), z.literal("未検証")]), // 効果値
 	group: z.string().optional(), // グループ番号（同じグループのバフは同時に適用されない） 今はどことも被ってないけど今後の実装で被るということもあるのが面倒 その時に既存のデータを更新できるか？
 	numberType: z.enum(["percent"]).optional(), // 効果値の単位
 });
@@ -178,9 +178,14 @@ export const STATUS_UP_CALC_METHODS = {
 	ピッキング回転速度補正: "add",
 	攻撃範囲増加: "add", // 確認済み
 	スペル短縮: "add",
+	詠唱継続率: "add",
+	伐採命中: "add",
+	サイズ: "individual",
+	落下ダメージ率: "add",
+	落下速度率: "add",
 } satisfies Record<
 	(typeof EFFECT_SUBJECTS)[number]["_type"],
-	"add" | "multiply"
+	"add" | "multiply" | "individual"
 >;
 
 export type StatusUpBuff = z.infer<typeof statusUpBuffSchema>;
@@ -253,10 +258,23 @@ const preventBuff = z.object({
 	type: z.literal("prevent"),
 	subject: z.union([
 		z.literal("満腹度減少"),
-		z.literal(" 潤喉度減少"),
+		z.literal("潤喉度減少"),
 		z.literal("水中呼吸減少"),
+		z.literal("ペット死亡時忠誠減少"),
+		z.literal("ステータス減少"),
+		z.literal("毒"),
+		z.literal("病気"),
+		z.literal("魔法攻撃"),
+		z.literal("物理攻撃"),
 	]),
-	value: z.number(),
+	ratio: z.number(), // %表記（100%で完全に防ぐ）
+});
+
+const reflectionBuff = z.object({
+	type: z.literal("reflection"),
+	subject: z.union([z.literal("物理攻撃"), z.literal("魔法攻撃")]),
+	ratio: z.number(),
+	probability: z.number(),
 });
 
 const damageUpBuff = z.object({
@@ -264,6 +282,30 @@ const damageUpBuff = z.object({
 	subject: z.union([z.literal("悪魔"), z.literal("巨人"), z.literal("鳥")]),
 	value: z.number(), // ％表記
 });
+
+const buffAssignBuff = z.object({
+	type: z.literal("buffAssign"),
+	trigger: z.literal("被ダメージ"),
+	buffSubject: z.string(), // バフの対象
+	probability: z.number(), // 発動確率
+});
+
+const prohibitBuff = z.object({
+	type: z.literal("prohibit"),
+	subject: z.union([z.literal("移動"), z.literal("テクニック")]),
+});
+
+const friendshipBuff = z.union([
+	z.object({
+		type: z.literal("friendship"),
+		all: z.literal(true),
+	}),
+	z.object({
+		type: z.literal("friendship"),
+		all: z.literal(false).optional(),
+		subject: z.array(z.union([z.literal("獣"), z.literal("鳥")]).optional()),
+	}),
+]);
 
 export const buffSchema = z.union([
 	z.object({
@@ -293,6 +335,10 @@ export const buffSchema = z.union([
 				techniqueMotionChangeBuff,
 				preventBuff,
 				damageUpBuff,
+				reflectionBuff,
+				buffAssignBuff,
+				prohibitBuff,
+				friendshipBuff,
 			]),
 		),
 	}),

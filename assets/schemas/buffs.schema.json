@@ -124,6 +124,8 @@
 												"最大重量",
 												"所持重量",
 												"ジャンプ力率",
+												"落下速度率",
+												"落下ダメージ率",
 												"BREATH",
 												"料理ゲージ滑り",
 												"料理ゲージ速度",
@@ -188,11 +190,22 @@
 												"満腹度",
 												"ピッキング失敗回数補正",
 												"ピッキング回転速度補正",
-												"攻撃範囲増加"
+												"攻撃範囲増加",
+												"詠唱継続率",
+												"伐採命中",
+												"サイズ"
 											]
 										},
 										"value": {
-											"type": "number"
+											"anyOf": [
+												{
+													"type": "number"
+												},
+												{
+													"type": "string",
+													"const": "未検証"
+												}
+											]
 										},
 										"group": {
 											"type": "string"
@@ -474,13 +487,23 @@
 										},
 										"subject": {
 											"type": "string",
-											"enum": ["満腹度減少", " 潤喉度減少", "水中呼吸減少"]
+											"enum": [
+												"満腹度減少",
+												"潤喉度減少",
+												"水中呼吸減少",
+												"ペット死亡時忠誠減少",
+												"ステータス減少",
+												"毒",
+												"病気",
+												"魔法攻撃",
+												"物理攻撃"
+											]
 										},
-										"value": {
+										"ratio": {
 											"type": "number"
 										}
 									},
-									"required": ["type", "subject", "value"],
+									"required": ["type", "subject", "ratio"],
 									"additionalProperties": false
 								},
 								{
@@ -500,6 +523,111 @@
 									},
 									"required": ["type", "subject", "value"],
 									"additionalProperties": false
+								},
+								{
+									"type": "object",
+									"properties": {
+										"type": {
+											"type": "string",
+											"const": "reflection"
+										},
+										"subject": {
+											"type": "string",
+											"enum": ["物理攻撃", "魔法攻撃"]
+										},
+										"ratio": {
+											"type": "number"
+										},
+										"probability": {
+											"type": "number"
+										}
+									},
+									"required": ["type", "subject", "ratio", "probability"],
+									"additionalProperties": false
+								},
+								{
+									"type": "object",
+									"properties": {
+										"type": {
+											"type": "string",
+											"const": "buffAssign"
+										},
+										"trigger": {
+											"type": "string",
+											"const": "被ダメージ"
+										},
+										"buffSubject": {
+											"type": "string"
+										},
+										"probability": {
+											"type": "number"
+										}
+									},
+									"required": ["type", "trigger", "buffSubject", "probability"],
+									"additionalProperties": false
+								},
+								{
+									"type": "object",
+									"properties": {
+										"type": {
+											"type": "string",
+											"const": "prohibit"
+										},
+										"subject": {
+											"type": "string",
+											"enum": ["移動", "テクニック"]
+										}
+									},
+									"required": ["type", "subject"],
+									"additionalProperties": false
+								},
+								{
+									"anyOf": [
+										{
+											"type": "object",
+											"properties": {
+												"type": {
+													"type": "string",
+													"const": "friendship"
+												},
+												"all": {
+													"type": "boolean",
+													"const": true
+												}
+											},
+											"required": ["type", "all"],
+											"additionalProperties": false
+										},
+										{
+											"type": "object",
+											"properties": {
+												"type": {
+													"type": "string",
+													"const": "friendship"
+												},
+												"all": {
+													"type": "boolean",
+													"const": false
+												},
+												"subject": {
+													"type": "array",
+													"items": {
+														"anyOf": [
+															{
+																"not": {}
+															},
+															{
+																"type": "string",
+																"enum": ["獣", "鳥"]
+															}
+														]
+													}
+												}
+											},
+											"required": ["type", "subject"],
+											"additionalProperties": false
+										}
+									]
 								}
 							]
 						}

@@ -749,7 +749,7 @@
 			{
 				"type": "prevent",
 				"subject": "満腹度減少",
-				"value": 2
+				"ratio": 2
 			}
 		],
 		"description": ""
@@ -955,7 +955,7 @@
 		"name": "海神の加護",
 		"effects": [
 			{ "type": "statusUp", "subject": "ST自然回復", "value": 42 },
-			{ "type": "prevent", "subject": "水中呼吸減少", "value": 100 }
+			{ "type": "prevent", "subject": "水中呼吸減少", "ratio": 100 }
 		],
 		"description": "水中で呼吸が可能になり、スタミナの自然回復が上昇する"
 	},
@@ -8799,117 +8799,271 @@
 	},
 	{
 		"name": "アニマル チャーム",
-		"unedited": true,
-		"effects": [],
-		"description": ""
+		"effects": [
+			{
+				"type": "statusUp",
+				"subject": "ペット経験値率",
+				"value": 20,
+				"numberType": "percent"
+			}
+		],
+		"description": "動物も魅了する魅惑のもふもふ感 ※ペットの取得経験値が大幅に上昇する"
 	},
 	{
 		"name": "天女の力",
-		"unedited": true,
-		"effects": [],
-		"description": ""
+		"effects": [
+			{
+				"type": "statusUp",
+				"subject": "魔力",
+				"value": 3,
+				"numberType": "percent"
+			},
+			{
+				"type": "statusUp",
+				"subject": "ジャンプ力率",
+				"value": 71
+			},
+			{ "type": "statusUp", "subject": "落下速度率", "value": -25 },
+			{ "type": "statusUp", "subject": "落下ダメージ率", "value": -25 }
+		],
+		"description": "魔力とジャンプ力が増加して、落下速度と落下ダメージが低下する"
 	},
 	{
 		"name": "天女の加護",
-		"unedited": true,
-		"effects": [],
-		"description": ""
+		"effects": [
+			{
+				"type": "prevent",
+				"subject": "魔法攻撃",
+				"ratio": 25
+			},
+			{
+				"type": "statusUp",
+				"subject": "MP自然回復",
+				"value": "未検証",
+				"numberType": "percent"
+			}
+		],
+		"description": "魔法ダメージを25%軽減して、MPの自然回復が上昇する"
 	},
 	{
 		"name": "アイラ フォーム",
-		"unedited": true,
-		"effects": [],
-		"description": ""
+		"effects": [{ "type": "transform", "subject": "アイラ" }],
+		"description": "アイラに変身できる"
 	},
 	{
 		"name": "アイラ(人型) フォーム",
-		"unedited": true,
-		"effects": [],
-		"description": ""
+		"effects": [{ "type": "transform", "subject": "アイラ(人型)" }],
+		"description": "アイラ(人型)に変身できる"
 	},
 	{
 		"name": "ゆめくじら フォーム",
-		"unedited": true,
-		"effects": [],
-		"description": ""
+		"effects": [{ "type": "transform", "subject": "ゆめくじら" }],
+		"description": "ゆめくじらに変身できる"
 	},
 	{
 		"name": "孔雀の加護",
-		"unedited": true,
-		"effects": [],
-		"description": ""
+		"effects": [
+			{
+				"type": "statusUp",
+				"subject": "最大HP",
+				"value": 5,
+				"numberType": "percent"
+			},
+			{ "type": "prevent", "subject": "病気", "ratio": 100 },
+			{ "type": "prevent", "subject": "毒", "ratio": 100 }
+		],
+		"description": "最大HPが5%上昇して、病気や毒に対して強い耐性を得る"
 	},
 	{
 		"name": "ドール ポーズ",
-		"unedited": true,
-		"effects": [],
-		"description": ""
+		"effects": [
+			{ "type": "standMotionChange" },
+			{
+				"type": "statusUp",
+				"subject": "サイズ",
+				"value": -50,
+				"numberType": "percent"
+			},
+			{ "type": "prohibit", "subject": "移動" },
+			{ "type": "prohibit", "subject": "テクニック" },
+			{ "type": "friendship", "all": true }
+		],
+		"description": "フィギュアのようなポーズ※モーション中は敵に襲われにくくなる"
 	},
 	{
 		"name": "海狸の加護",
-		"unedited": true,
-		"effects": [],
-		"description": ""
+		"effects": [
+			{
+				"type": "statusUp",
+				"subject": "泳ぎ速度",
+				"value": 20
+			},
+			{
+				"type": "statusUp",
+				"subject": "伐採命中",
+				"value": "未検証"
+			}
+		],
+		"description": "泳ぎ速度と伐採の命中率が上昇する"
 	},
 	{
 		"name": "フューチャードロイド フォーム",
-		"unedited": true,
-		"effects": [],
-		"description": ""
+		"effects": [{ "type": "transform", "subject": "フューチャードロイド" }],
+		"description": "フューチャードロイドに変身できる"
 	},
 	{
 		"name": "スネーク サポート",
-		"unedited": true,
-		"effects": [],
-		"description": ""
+		"effects": [
+			{
+				"type": "statusUp",
+				"subject": "命中",
+				"value": 15,
+				"numberType": "percent"
+			},
+			{
+				"type": "statusUp",
+				"subject": "回避",
+				"value": 15,
+				"numberType": "percent"
+			}
+		],
+		"description": "蛇が敵の動きを感知することで、命中と回避を大幅に上昇する"
 	},
 	{
 		"name": "三巳一体",
-		"unedited": true,
-		"effects": [],
-		"description": ""
+		"effects": [
+			{
+				"type": "followAttack",
+				"subject": "噛みつき攻撃(100%)→巻きつき攻撃(50%)→毒ブレス攻撃(50%※噛みつきと巻きつき攻撃は武器を装備していない場合は発動しない※毒ブレスは筋力スキル依存でダメージが上昇する"
+			}
+		],
+		"description": "通常攻撃がＨＩＴした際に、コブラによる追加攻撃が発動する"
 	},
 	{
 		"name": "ラッキーチャーム",
-		"unedited": true,
-		"effects": [],
-		"description": ""
+		"effects": [
+			{
+				"type": "statusUp",
+				"subject": "神秘",
+				"value": 5
+			},
+			{
+				"type": "statusUp",
+				"subject": "クリティカル率",
+				"value": 5
+			},
+			{
+				"type": "statusUp",
+				"subject": "詠唱継続率",
+				"value": 5
+			},
+			{
+				"type": "prevent",
+				"subject": "ペット死亡時忠誠減少",
+				"ratio": 50
+			}
+		],
+		"description": "神秘魔法の効果とクリティカル率と詠唱妨害耐性が少し上昇して、ペット死亡時の忠誠度低下が半減する"
 	},
 	{
 		"name": "ポストマン",
-		"unedited": true,
-		"effects": [],
-		"description": ""
+		"effects": [
+			{
+				"type": "statusUp",
+				"subject": "移動速度",
+				"value": 5,
+				"numberType": "percent"
+			},
+			{
+				"type": "statusUp",
+				"subject": "ST自然回復",
+				"value": 41.25
+			},
+			{
+				"type": "statusUp",
+				"subject": "所持重量",
+				"value": -20,
+				"numberType": "percent"
+			}
+		],
+		"description": "移動速度とスタミナの自然回復速度が上昇して、持ち物の重さが軽くなる"
 	},
 	{
 		"name": "ミリタリーアーツ",
-		"unedited": true,
-		"effects": [],
-		"description": ""
+		"effects": [
+			{
+				"type": "statusUp",
+				"subject": "戦闘技術",
+				"value": 20
+			},
+			{
+				"type": "statusUp",
+				"subject": "物理与ダメージ率",
+				"value": 10
+			}
+		],
+		"description": "戦闘技術の効果が上昇し、攻撃力依存のダメージが少し上昇する"
 	},
 	{
 		"name": "ウルの加護",
-		"unedited": true,
-		"effects": [],
-		"description": ""
+		"effects": [
+			{
+				"type": "statusUp",
+				"subject": "命中",
+				"value": 20,
+				"numberType": "percent"
+			}
+		],
+		"description": "狩猟の神の加護で命中が大幅に上昇する"
 	},
 	{
 		"name": "氷結の魔女",
-		"unedited": true,
-		"effects": [],
-		"description": ""
+		"effects": [
+			{
+				"type": "statusUp",
+				"subject": "破壊",
+				"value": 10
+			},
+			{
+				"type": "statusUp",
+				"subject": "水属性効果率",
+				"value": 10
+			}
+		],
+		"description": "破壊魔法と水属性の効果が上昇する"
 	},
 	{
 		"name": "愛の神",
-		"unedited": true,
-		"effects": [],
-		"description": ""
+		"effects": [
+			{
+				"type": "statusUp",
+				"subject": "HP自然回復",
+				"value": 112.5
+			},
+			{
+				"type": "statusUp",
+				"subject": "ペット経験値率",
+				"value": 20
+			}
+		],
+		"description": "愛の神の力でHPの自然回復速度とペットの取得経験値を大幅に上昇させる"
 	},
 	{
 		"name": "ハッピー バレンタイン",
-		"unedited": true,
-		"effects": [],
-		"description": ""
+		"effects": [
+			{
+				"type": "statusUp",
+				"subject": "破壊",
+				"value": 5
+			},
+			{
+				"type": "buffAssign",
+				"trigger": "被ダメージ",
+				"buffSubject": "転生の炎",
+				"probability": 10
+			}
+		],
+		"description": "破壊魔法の効果が上昇して、ダメージを受けた際に低確率で、一度だけ自動で完全復活することができる『転生の炎』が付与される"
 	},
 	{
 		"name": "神獣朱雀の加護",
@@ -8919,33 +9073,81 @@
 	},
 	{
 		"name": "神獣青龍の加護",
-		"unedited": true,
-		"effects": [],
-		"description": ""
+		"effects": [
+			{
+				"type": "statusUp",
+				"subject": "破壊",
+				"value": 5
+			},
+			{
+				"type": "statusUp",
+				"subject": "魔力",
+				"value": 3,
+				"numberType": "percent"
+			}
+		],
+		"description": "破壊魔法と魔力の効果が上昇する"
 	},
 	{
 		"name": "神獣白虎の加護",
-		"unedited": true,
-		"effects": [],
-		"description": ""
+		"effects": [
+			{
+				"type": "statusUp",
+				"subject": "破壊",
+				"value": 5
+			},
+			{
+				"type": "statusUp",
+				"subject": "魔法ディレイ",
+				"value": -5
+			}
+		],
+		"description": "破壊魔法の効果が上昇して、魔法ディレイが短縮される"
 	},
 	{
 		"name": "神獣玄武の加護",
-		"unedited": true,
-		"effects": [],
-		"description": ""
+		"effects": [
+			{ "type": "statusUp", "subject": "破壊", "value": 5 },
+			{
+				"type": "statusUp",
+				"subject": "所持重量",
+				"value": -20,
+				"numberType": "percent"
+			}
+		],
+		"description": "破壊魔法の効果が上昇して、アイテムの重さが軽くなる"
 	},
 	{
 		"name": "オーリ・オール",
-		"unedited": true,
-		"effects": [],
-		"description": ""
+		"effects": [
+			{
+				"type": "statusUp",
+				"subject": "落下速度率",
+				"value": -30,
+				"numberType": "percent"
+			},
+			{
+				"type": "statusUp",
+				"subject": "移動速度",
+				"value": 20
+			},
+			{
+				"type": "reflection",
+				"subject": "物理攻撃",
+				"ratio": 50,
+				"probability": 25
+			}
+		],
+		"description": "物理ダメージを25%の確率で50%反射し、落下速度が低下、移動速度が上昇する"
 	},
 	{
 		"name": "アウリオール",
-		"unedited": true,
-		"effects": [],
-		"description": ""
+		"effects": [
+			{ "type": "prevent", "subject": "ステータス減少", "ratio": 100 },
+			{ "type": "statusUp", "subject": "最大重量", "value": 40 },
+			{ "type": "technique", "subject": "オリジン・フォース" }
+		],
+		"description": "ステータスダウン効果を打ち消し、最大所持重量が増加する"
 	},
 	{
 		"name": "異界の魔力炉心",
