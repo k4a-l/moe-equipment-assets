@@ -448,7 +448,22 @@ export declare const buffSchema: z.ZodUnion<[z.ZodObject<{
         type: "friendship";
         subject: ("鳥" | "獣" | undefined)[];
         all?: false | undefined;
-    }>]>]>, "many">;
+    }>]>, z.ZodObject<{
+        type: z.ZodLiteral<"avoid">;
+        subject: z.ZodUnion<[z.ZodLiteral<"物理攻撃">, z.ZodLiteral<"魔法攻撃">]>;
+        threshold: z.ZodOptional<z.ZodNumber>;
+        probability: z.ZodOptional<z.ZodNumber>;
+    }, "strip", z.ZodTypeAny, {
+        type: "avoid";
+        subject: "魔法攻撃" | "物理攻撃";
+        probability?: number | undefined;
+        threshold?: number | undefined;
+    }, {
+        type: "avoid";
+        subject: "魔法攻撃" | "物理攻撃";
+        probability?: number | undefined;
+        threshold?: number | undefined;
+    }>]>, "many">;
 }, "strip", z.ZodTypeAny, {
     description: string;
     name: string;
@@ -502,6 +517,11 @@ export declare const buffSchema: z.ZodUnion<[z.ZodObject<{
         type: "prevent";
         subject: "満腹度減少" | "潤喉度減少" | "水中呼吸減少" | "ペット死亡時忠誠減少" | "ステータス減少" | "毒" | "病気" | "魔法攻撃" | "物理攻撃";
         ratio: number;
+    } | {
+        type: "avoid";
+        subject: "魔法攻撃" | "物理攻撃";
+        probability?: number | undefined;
+        threshold?: number | undefined;
     } | {
         type: "reflection";
         subject: "魔法攻撃" | "物理攻撃";
@@ -582,6 +602,11 @@ export declare const buffSchema: z.ZodUnion<[z.ZodObject<{
         type: "prevent";
         subject: "満腹度減少" | "潤喉度減少" | "水中呼吸減少" | "ペット死亡時忠誠減少" | "ステータス減少" | "毒" | "病気" | "魔法攻撃" | "物理攻撃";
         ratio: number;
+    } | {
+        type: "avoid";
+        subject: "魔法攻撃" | "物理攻撃";
+        probability?: number | undefined;
+        threshold?: number | undefined;
     } | {
         type: "reflection";
         subject: "魔法攻撃" | "物理攻撃";

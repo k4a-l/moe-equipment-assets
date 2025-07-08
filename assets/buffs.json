@@ -8740,63 +8740,156 @@
 	},
 	{
 		"name": "ノアの光",
-		"unedited": true,
-		"effects": [],
-		"description": ""
+		"effects": [
+			{
+				"type": "statusUp",
+				"subject": "魔力",
+				"value": 3,
+				"numberType": "percent"
+			},
+			{
+				"type": "statusUp",
+				"subject": "MP自然回復",
+				"value": "未検証"
+			}
+		],
+		"description": "魔力とMPの自然回復量が上昇する"
 	},
 	{
 		"name": "怒髪衝天",
-		"unedited": true,
-		"effects": [],
-		"description": ""
+		"effects": [
+			{
+				"type": "statusUp",
+				"subject": "物理与ダメージ",
+				"value": 10,
+				"numberType": "percent"
+			},
+			{
+				"type": "avoid",
+				"subject": "物理攻撃",
+				"threshold": 10
+			}
+		],
+		"description": "怒りによる興奮状態で攻撃力に依存するダメージが増加して、10未満のダメージを無効化する"
 	},
 	{
 		"name": "ふぃにゅましゅ フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [{ "type": "transform", "subject": "ふぃにゅましゅ" }],
 		"description": ""
 	},
 	{
 		"name": "ぷるるーむましゅ フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [{ "type": "transform", "subject": "ぷるるーむましゅ" }],
 		"description": ""
 	},
 	{
 		"name": "夫婦剣",
-		"unedited": true,
-		"effects": [],
-		"description": ""
+		"effects": [
+			{
+				"type": "statusUp",
+				"subject": "物理与ダメージ",
+				"value": 10,
+				"numberType": "percent"
+			},
+			{
+				"type": "prevent",
+				"subject": "魔法攻撃",
+				"ratio": 15
+			}
+		],
+		"description": "攻撃力に依存するダメージが増加して、魔法ダメージを15%軽減する"
 	},
 	{
 		"name": "こましゅ フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [{ "type": "transform", "subject": "こましゅ" }],
 		"description": ""
 	},
 	{
 		"name": "海竜の力",
-		"unedited": true,
-		"effects": [],
-		"description": ""
+		"effects": [
+			{
+				"type": "prevent",
+				"subject": "水中呼吸減少",
+				"ratio": 100
+			},
+			{
+				"type": "statusUp",
+				"subject": "泳ぎ速度",
+				"value": 30
+			},
+			{
+				"type": "statusUp",
+				"subject": "水泳",
+				"value": "未検証"
+			}
+		],
+		"description": "水中での呼吸が可能になり、水中の移動速度と水泳スキル依存の効果が上昇する"
 	},
 	{
 		"name": "法力",
-		"unedited": true,
-		"effects": [],
-		"description": ""
+		"effects": [
+			{
+				"type": "statusUp",
+				"subject": "強化",
+				"value": 10
+			},
+			{
+				"type": "statusUp",
+				"subject": "回復",
+				"value": 10
+			},
+			{
+				"type": "damageUp",
+				"subject": "アンデッド",
+				"value": 25
+			}
+		],
+		"description": "強化魔法と回復魔法の効果が上昇してアンデットに対してダメージが増加する"
 	},
 	{
 		"name": "魔法陣ブースト",
-		"unedited": true,
-		"effects": [],
-		"description": ""
+		"effects": [
+			{
+				"type": "statusUp",
+				"subject": "破壊",
+				"value": 10
+			},
+			{
+				"type": "statusUp",
+				"subject": "強化",
+				"value": 10
+			},
+			{
+				"type": "statusUp",
+				"subject": "神秘",
+				"value": 10
+			},
+			{
+				"type": "statusUp",
+				"subject": "回復",
+				"value": 10
+			}
+		],
+		"description": "破壊/強化/神秘/回復の魔法効果が上昇する"
 	},
 	{
 		"name": "銃士の心得",
-		"unedited": true,
-		"effects": [],
-		"description": ""
+		"effects": [
+			{
+				"type": "statusUp",
+				"subject": "クリティカル率",
+				"value": 15,
+				"numberType": "percent",
+				"group": "B1"
+			},
+			{
+				"type": "statusUp",
+				"subject": "命中",
+				"value": 10,
+				"numberType": "percent"
+			}
+		],
+		"description": "クリティカル率と命中が上昇する"
 	},
 	{
 		"name": "アニマル チャーム",

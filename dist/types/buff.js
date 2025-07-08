@@ -215,6 +215,12 @@ const preventBuff = z.object({
     ]),
     ratio: z.number(), // %表記（100%で完全に防ぐ）
 });
+const avoidBuff = z.object({
+    type: z.literal("avoid"),
+    subject: z.union([z.literal("物理攻撃"), z.literal("魔法攻撃")]),
+    threshold: z.number().optional(),
+    probability: z.number().optional(),
+});
 const reflectionBuff = z.object({
     type: z.literal("reflection"),
     subject: z.union([z.literal("物理攻撃"), z.literal("魔法攻撃")]),
@@ -283,6 +289,7 @@ export const buffSchema = z.union([
             buffAssignBuff,
             prohibitBuff,
             friendshipBuff,
+            avoidBuff,
         ])),
     }),
 ]);

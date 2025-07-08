@@ -638,6 +638,27 @@
 											"additionalProperties": false
 										}
 									]
+								},
+								{
+									"type": "object",
+									"properties": {
+										"type": {
+											"type": "string",
+											"const": "avoid"
+										},
+										"subject": {
+											"type": "string",
+											"enum": ["物理攻撃", "魔法攻撃"]
+										},
+										"threshold": {
+											"type": "number"
+										},
+										"probability": {
+											"type": "number"
+										}
+									},
+									"required": ["type", "subject"],
+									"additionalProperties": false
 								}
 							]
 						}
