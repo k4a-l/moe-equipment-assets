@@ -21,6 +21,7 @@
 		"assets/",
 		"assets/schemas/",
 		"dist/types/",
+		"dist/utils/",
 		"index.js",
 		"index.d.ts"
 	],
