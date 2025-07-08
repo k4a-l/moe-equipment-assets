@@ -212,8 +212,13 @@ const preventBuff = z.object({
         z.literal("病気"),
         z.literal("魔法攻撃"),
         z.literal("物理攻撃"),
+        z.literal("火属性"),
+        z.literal("水属性"),
+        z.literal("風属性"),
+        z.literal("地属性"),
+        z.literal("無属性"),
     ]),
-    ratio: z.number(), // %表記（100%で完全に防ぐ）
+    ratio: z.union([z.number(), z.literal("未検証")]), // %表記（100%で完全に防ぐ）
 });
 const avoidBuff = z.object({
     type: z.literal("avoid"),
@@ -258,6 +263,12 @@ const friendshipBuff = z.union([
         subject: z.array(z.union([z.literal("獣"), z.literal("鳥")]).optional()),
     }),
 ]);
+const conversionBuff = z.object({
+    type: z.literal("conversion"),
+    from: effectSubjectSchema,
+    to: effectSubjectSchema,
+    ratio: z.number(),
+});
 export const buffSchema = z.union([
     z.object({
         name: z.string(),
@@ -290,6 +301,7 @@ export const buffSchema = z.union([
             prohibitBuff,
             friendshipBuff,
             avoidBuff,
+            conversionBuff,
         ])),
     }),
 ]);

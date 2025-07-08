@@ -25,19 +25,40 @@ function writeSchemaFile(schema: unknown, name: string) {
 	);
 }
 
-// JSON Schemaに変換
+// JSON Schemaに変換（$refを無効化して展開する）
 const shieldItemJsonSchema =
-	zodToJsonSchema(shieldItemSchema, "ShieldItem").definitions?.ShieldItem ||
-	zodToJsonSchema(shieldItemSchema, "ShieldItem");
+	zodToJsonSchema(shieldItemSchema, {
+		name: "ShieldItem",
+		$refStrategy: "none",
+	}).definitions?.ShieldItem ||
+	zodToJsonSchema(shieldItemSchema, {
+		name: "ShieldItem",
+		$refStrategy: "none",
+	});
 const weaponItemJsonSchema =
-	zodToJsonSchema(weaponItemSchema, "WeaponItem").definitions?.WeaponItem ||
-	zodToJsonSchema(weaponItemSchema, "WeaponItem");
+	zodToJsonSchema(weaponItemSchema, {
+		name: "WeaponItem",
+		$refStrategy: "none",
+	}).definitions?.WeaponItem ||
+	zodToJsonSchema(weaponItemSchema, {
+		name: "WeaponItem",
+		$refStrategy: "none",
+	});
 const defenceItemJsonSchema =
-	zodToJsonSchema(defenceItemSchema, "DefenceItem").definitions?.DefenceItem ||
-	zodToJsonSchema(defenceItemSchema, "DefenceItem");
+	zodToJsonSchema(defenceItemSchema, {
+		name: "DefenceItem",
+		$refStrategy: "none",
+	}).definitions?.DefenceItem ||
+	zodToJsonSchema(defenceItemSchema, {
+		name: "DefenceItem",
+		$refStrategy: "none",
+	});
 const buffJsonSchema =
-	zodToJsonSchema(buffSchema, "Buff").definitions?.Buff ||
-	zodToJsonSchema(buffSchema, "Buff");
+	zodToJsonSchema(buffSchema, {
+		name: "Buff",
+		$refStrategy: "none",
+	}).definitions?.Buff ||
+	zodToJsonSchema(buffSchema, { name: "Buff", $refStrategy: "none" });
 
 // 書き出し
 writeSchemaFile(shieldItemJsonSchema, "shields");

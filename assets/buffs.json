@@ -8668,75 +8668,166 @@
 	},
 	{
 		"name": "殲滅の魔術師",
-		"unedited": true,
-		"effects": [],
-		"description": ""
+		"effects": [
+			{ "type": "statusUp", "subject": "破壊", "value": 15 },
+			{ "type": "statusUp", "subject": "死魔", "value": 15 }
+		],
+		"description": "破壊魔法と死の魔法の効果が15上昇する ※WarAgeでは効果がない"
 	},
 	{
 		"name": "魔法の封蝋",
-		"unedited": true,
-		"effects": [],
-		"description": ""
+		"effects": [{ "type": "technique", "subject": "リリース オブ マジック" }],
+		"description": "専用技『 リリース オブ マジック 』が使用可能になる"
 	},
 	{
 		"name": "暗黒障壁",
-		"unedited": true,
-		"effects": [],
-		"description": ""
+		"effects": [
+			{
+				"type": "reflection",
+				"subject": "魔法攻撃",
+				"ratio": 1,
+				"probability": 0.2
+			}
+		],
+		"description": "20%の確率で魔法を反射する"
 	},
 	{
 		"name": "熾天使の加護",
-		"unedited": true,
-		"effects": [],
-		"description": ""
+		"effects": [
+			{
+				"type": "statusUp",
+				"subject": "攻撃力",
+				"value": 3,
+				"numberType": "percent"
+			},
+			{
+				"type": "statusUp",
+				"subject": "火属性効果",
+				"value": 10,
+				"numberType": "percent"
+			},
+			{
+				"type": "prevent",
+				"subject": "火属性",
+				"ratio": "未検証"
+			}
+		],
+		"description": "攻撃力と火属性のダメージが上昇して、火属性のダメージを軽減する"
 	},
 	{
 		"name": "不屈の魂",
-		"unedited": true,
-		"effects": [],
-		"description": ""
+		"effects": [
+			{
+				"type": "others",
+				"subject": "自動エンデュランスバフ ※効果発動時にBUFFが消えるか、一定時間で再点灯する※装備を付け替えた場合は約8秒間点灯しない"
+			}
+		],
+		"description": "BUFF点灯中に即死ダメージを受けてもギリギリで耐えることができる"
 	},
 	{
 		"name": "フューチャー テクノロジー",
-		"unedited": true,
-		"effects": [],
-		"description": ""
+		"effects": [
+			{
+				"type": "statusUp",
+				"subject": "攻撃力",
+				"value": 3,
+				"numberType": "percent"
+			},
+			{
+				"type": "statusUp",
+				"subject": "命中",
+				"value": 3,
+				"numberType": "percent"
+			},
+			{
+				"type": "statusUp",
+				"subject": "回避",
+				"value": 3,
+				"numberType": "percent"
+			},
+			{
+				"type": "statusUp",
+				"subject": "防御力",
+				"value": 3,
+				"numberType": "percent"
+			},
+			{
+				"type": "statusUp",
+				"subject": "耐全属性",
+				"value": 10,
+				"numberType": "percent"
+			}
+		],
+		"description": "攻撃力、命中、回避、防御、各属性耐性が少しずつ上昇する"
 	},
 	{
 		"name": "ノア リアクター",
-		"unedited": true,
-		"effects": [],
-		"description": ""
+		"effects": [
+			{
+				"type": "conversion",
+				"from": "魔力",
+				"to": "攻撃力",
+				"ratio": 0.1
+			},
+			{ "type": "statusUp", "subject": "筋力", "value": 20 },
+			{ "type": "statusUp", "subject": "最大重量", "value": 30 }
+		],
+		"description": "リアクターの効果で魔力の10%を攻撃力に変換し、筋力依存の効果と所持可能重量を増加させる"
 	},
 	{
 		"name": "破壊の紋章",
-		"unedited": true,
-		"effects": [],
-		"description": ""
+		"effects": [
+			{
+				"type": "statusUp",
+				"subject": "最大MP",
+				"value": 5,
+				"numberType": "percent"
+			},
+			{ "type": "statusUp", "subject": "破壊", "value": 15 }
+		],
+		"description": "最大MPと破壊魔法の効果が上昇する"
 	},
 	{
 		"name": "しいたけ フォーム",
-		"unedited": true,
-		"effects": [],
-		"description": ""
+		"effects": [{ "type": "transform", "subject": "しいたけ" }],
+		"description": "しいたけに変身できる"
 	},
 	{
 		"name": "ハロウィン キャット フォーム",
-		"unedited": true,
-		"effects": [],
-		"description": ""
+		"effects": [{ "type": "transform", "subject": "ハロウィン キャット" }],
+		"description": "ハロウィン キャットに変身できる"
 	},
 	{
 		"name": "スプーキー ソウル",
-		"unedited": true,
-		"effects": [],
-		"description": ""
+		"effects": [
+			{
+				"type": "statusUp",
+				"subject": "暗黒命令",
+				"value": 15
+			},
+			{
+				"type": "statusUp",
+				"subject": "死魔",
+				"value": 15
+			}
+		],
+		"description": "暗黒命令と死の魔法の効果が15上昇する"
 	},
 	{
 		"name": "妖艶な舞",
-		"unedited": true,
-		"effects": [],
-		"description": ""
+		"effects": [
+			{
+				"type": "statusUp",
+				"subject": "ダンス",
+				"value": 15
+			},
+			{
+				"type": "statusUp",
+				"subject": "音楽",
+				"value": 15
+			}
+		],
+		"description": "ダンスと音楽スキルの効果が15上昇する"
 	},
 	{
 		"name": "ノアの光",
