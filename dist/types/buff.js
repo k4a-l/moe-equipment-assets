@@ -1,5 +1,5 @@
 import z from "zod";
-import { strictFromEntries } from "@/utils/object";
+import { strictFromEntries } from "../utils/object";
 import { effectSubjectSchema, MANUFACTURE_PROCESS, } from "./effect";
 import { ALL_SKILLS, BASE_SKILLS, MANUFACTURE_SKILLS, MASTERY_SKILLS, } from "./skill";
 // ------------------ バフ ------------------ //
