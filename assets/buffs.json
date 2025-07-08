@@ -884,8 +884,9 @@
 		"effects": [
 			{
 				"type": "statusUp",
-				"subject": "魔法与ダメージ率",
-				"value": 10
+				"subject": "魔法与ダメージ",
+				"value": 10,
+				"numberType": "percent"
 			},
 			{
 				"type": "statusUp",
@@ -8802,7 +8803,7 @@
 		"effects": [
 			{
 				"type": "statusUp",
-				"subject": "ペット経験値率",
+				"subject": "ペット経験値",
 				"value": 20,
 				"numberType": "percent"
 			}
@@ -8820,11 +8821,22 @@
 			},
 			{
 				"type": "statusUp",
-				"subject": "ジャンプ力率",
-				"value": 71
+				"subject": "ジャンプ力",
+				"value": 71,
+				"numberType": "percent"
 			},
-			{ "type": "statusUp", "subject": "落下速度率", "value": -25 },
-			{ "type": "statusUp", "subject": "落下ダメージ率", "value": -25 }
+			{
+				"type": "statusUp",
+				"subject": "落下速度",
+				"value": -25,
+				"numberType": "percent"
+			},
+			{
+				"type": "statusUp",
+				"subject": "落下ダメージ",
+				"value": -25,
+				"numberType": "percent"
+			}
 		],
 		"description": "魔力とジャンプ力が増加して、落下速度と落下ダメージが低下する"
 	},
@@ -8998,8 +9010,9 @@
 			},
 			{
 				"type": "statusUp",
-				"subject": "物理与ダメージ率",
-				"value": 10
+				"subject": "物理与ダメージ",
+				"value": 10,
+				"numberType": "percent"
 			}
 		],
 		"description": "戦闘技術の効果が上昇し、攻撃力依存のダメージが少し上昇する"
@@ -9026,8 +9039,9 @@
 			},
 			{
 				"type": "statusUp",
-				"subject": "水属性効果率",
-				"value": 10
+				"subject": "水属性効果",
+				"value": 10,
+				"numberType": "percent"
 			}
 		],
 		"description": "破壊魔法と水属性の効果が上昇する"
@@ -9042,8 +9056,9 @@
 			},
 			{
 				"type": "statusUp",
-				"subject": "ペット経験値率",
-				"value": 20
+				"subject": "ペット経験値",
+				"value": 20,
+				"numberType": "percent"
 			}
 		],
 		"description": "愛の神の力でHPの自然回復速度とペットの取得経験値を大幅に上昇させる"
@@ -9122,7 +9137,7 @@
 		"effects": [
 			{
 				"type": "statusUp",
-				"subject": "落下速度率",
+				"subject": "落下速度",
 				"value": -30,
 				"numberType": "percent"
 			},
@@ -9249,8 +9264,9 @@
 			},
 			{
 				"type": "statusUp",
-				"subject": "風属性効果率",
-				"value": 10
+				"subject": "風属性効果",
+				"value": 10,
+				"numberType": "percent"
 			}
 		],
 		"description": "魔力と最大MPが上昇して、風属性のダメージが増加する"
@@ -9290,8 +9306,9 @@
 		"effects": [
 			{
 				"type": "statusUp",
-				"subject": "ジャンプ力率",
-				"value": 45
+				"subject": "ジャンプ力",
+				"value": 45,
+				"numberType": "percent"
 			},
 			{
 				"type": "statusUp",
@@ -9315,8 +9332,9 @@
 		"effects": [
 			{
 				"type": "statusUp",
-				"subject": "魔法与ダメージ率",
-				"value": 10
+				"subject": "魔法与ダメージ",
+				"value": 10,
+				"numberType": "percent"
 			},
 			{
 				"type": "statusUp",
@@ -9343,8 +9361,9 @@
 			},
 			{
 				"type": "statusUp",
-				"subject": "物理与ダメージ率",
-				"value": 10
+				"subject": "物理与ダメージ",
+				"value": 10,
+				"numberType": "percent"
 			}
 		],
 		"description": "竜の如き腕力で敵を粉砕する\n※攻撃力とクリティカル率が上昇し、攻撃力依存の物理ダメージが増加する"
@@ -9360,8 +9379,9 @@
 			},
 			{
 				"type": "statusUp",
-				"subject": "無属性効果率",
-				"value": 20
+				"subject": "無属性効果",
+				"value": 20,
+				"numberType": "percent"
 			}
 		],
 		"description": "耐全属性が10%上昇して、無属性の魔法ダメージが増加する"
@@ -9376,8 +9396,9 @@
 			},
 			{
 				"type": "statusUp",
-				"subject": "ペット経験値率",
-				"value": 20
+				"subject": "ペット経験値",
+				"value": 20,
+				"numberType": "percent"
 			}
 		],
 		"description": "調教スキルの効果とペットの取得経験値が大幅に増加する"
@@ -9392,8 +9413,9 @@
 		"effects": [
 			{
 				"type": "statusUp",
-				"subject": "物理与ダメージ率",
-				"value": 15
+				"subject": "物理与ダメージ",
+				"value": 15,
+				"numberType": "percent"
 			},
 			{
 				"type": "statusUp",
@@ -9454,8 +9476,9 @@
 		"effects": [
 			{
 				"type": "statusUp",
-				"subject": "魔法与ダメージ率",
-				"value": 10
+				"subject": "魔法与ダメージ",
+				"value": 10,
+				"numberType": "percent"
 			},
 			{
 				"type": "statusUp",
@@ -9470,8 +9493,9 @@
 		"effects": [
 			{
 				"type": "statusUp",
-				"subject": "水属性効果率",
-				"value": 10
+				"subject": "水属性効果",
+				"value": 10,
+				"numberType": "percent"
 			},
 			{ "type": "others", "subject": "呼吸永続" }
 		],
@@ -9524,8 +9548,9 @@
 		"effects": [
 			{
 				"type": "statusUp",
-				"subject": "物理与ダメージ率",
-				"value": 10
+				"subject": "物理与ダメージ",
+				"value": 10,
+				"numberType": "percent"
 			},
 			{
 				"type": "statusUp",
@@ -9572,13 +9597,15 @@
 		"effects": [
 			{
 				"type": "statusUp",
-				"subject": "火属性効果率",
-				"value": 10
+				"subject": "火属性効果",
+				"value": 10,
+				"numberType": "percent"
 			},
 			{
 				"type": "statusUp",
-				"subject": "風属性効果率",
-				"value": 10
+				"subject": "風属性効果",
+				"value": 10,
+				"numberType": "percent"
 			},
 			{
 				"type": "recovery",
@@ -9621,8 +9648,9 @@
 			},
 			{
 				"type": "statusUp",
-				"subject": "ペット経験値率",
-				"value": 10
+				"subject": "ペット経験値",
+				"value": 10,
+				"numberType": "percent"
 			}
 		],
 		"description": "調教スキルの効果とペットの取得経験値が少し上昇する"
@@ -9713,13 +9741,15 @@
 		"effects": [
 			{
 				"type": "statusUp",
-				"subject": "火属性効果率",
-				"value": 10
+				"subject": "火属性効果",
+				"value": 10,
+				"numberType": "percent"
 			},
 			{
 				"type": "statusUp",
-				"subject": "物理与ダメージ率",
-				"value": 10
+				"subject": "物理与ダメージ",
+				"value": 10,
+				"numberType": "percent"
 			},
 			{
 				"type": "statusUp",

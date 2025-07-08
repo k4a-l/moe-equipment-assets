@@ -45,8 +45,8 @@ const statusUpBuffSchema = z.object({
 export const STATUS_UP_CALC_METHODS = {
 	攻撃力: "add",
 	命中: "add",
-	物理与ダメージ率: "add", // 確認済み
-	魔法与ダメージ率: "add", // 確認済み
+	物理与ダメージ: "add", // 確認済み
+	魔法与ダメージ: "add", // 確認済み
 	魔法ディレイ: "add",
 	クリティカル率: "add", // 確認済み
 	魔力: "add",
@@ -89,12 +89,12 @@ export const STATUS_UP_CALC_METHODS = {
 	パフォーマンス: "add",
 	ダンス: "add",
 	// ここまでスキル系は全部加算
-	ペット経験値率: "multiply", // 確認済み
-	火属性効果率: "add", // 確認済み
-	水属性効果率: "add", // 確認済み
-	土属性効果率: "add", // 確認済み
-	風属性効果率: "add", // 確認済み
-	無属性効果率: "add", // 確認済み
+	ペット経験値: "multiply", // 確認済み
+	火属性効果: "add", // 確認済み
+	水属性効果: "add", // 確認済み
+	土属性効果: "add", // 確認済み
+	風属性効果: "add", // 確認済み
+	無属性効果: "add", // 確認済み
 	HP自然回復: "add", //  確認済み
 	ST自然回復: "add", // 確認済み
 	MP自然回復: "add", // 確認済み
@@ -111,7 +111,7 @@ export const STATUS_UP_CALC_METHODS = {
 	SMELLING: "add",
 	最大重量: "add",
 	所持重量: "multiply", // 確認済み
-	ジャンプ力率: "add",
+	ジャンプ力: "add",
 	BREATH: "add",
 	料理ゲージ滑り: "add",
 	料理ゲージ速度: "add",
@@ -181,8 +181,8 @@ export const STATUS_UP_CALC_METHODS = {
 	詠唱継続率: "add",
 	伐採命中: "add",
 	サイズ: "individual",
-	落下ダメージ率: "add",
-	落下速度率: "add",
+	落下ダメージ: "add",
+	落下速度: "add",
 } satisfies Record<
 	(typeof EFFECT_SUBJECTS)[number]["_type"],
 	"add" | "multiply" | "individual"
