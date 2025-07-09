@@ -78,3 +78,27 @@ export function readBuffFile(): Buff[] {
 		return [];
 	}
 }
+
+export function readAdditionProbability() {
+	const data = readAssetsFile(`source/addition-probability.json`);
+	if (!data) return [];
+	try {
+		const buffs: { 名称: string; info: string }[] = JSON.parse(data);
+		return buffs;
+	} catch (error) {
+		console.error(`Error parsing buff:`, error);
+		return [];
+	}
+}
+
+export function readAdditionResonance() {
+	const data = readAssetsFile(`source/addition-resonance.json`);
+	if (!data) return [];
+	try {
+		const buffs: { 名称: string; info: string }[] = JSON.parse(data);
+		return buffs;
+	} catch (error) {
+		console.error(`Error parsing buff:`, error);
+		return [];
+	}
+}

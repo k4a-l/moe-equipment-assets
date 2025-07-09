@@ -31,7 +31,7 @@ export const MASTERY_SKILLS = [
     z.literal("神秘"),
     z.literal("召喚"),
     z.literal("強化"),
-    z.literal("死魔"),
+    z.literal("死の魔法"),
     z.literal("魔法熟練"),
     z.literal("自然調和"),
     z.literal("暗黒命令"),

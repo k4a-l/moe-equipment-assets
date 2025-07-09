@@ -46,6 +46,7 @@ export const STATUS_UP_CALC_METHODS = {
     魔法与ダメージ: "add", // 確認済み
     魔法ディレイ: "add",
     クリティカル率: "add", // 確認済み
+    被クリティカル率: "add",
     魔力: "add",
     攻撃ディレイ: "add",
     最大HP: "add",
@@ -172,19 +173,19 @@ const techniqueMotionChangeBuff = z.object({
 });
 const recoveryBuff = z.object({
     type: z.literal("recovery"),
-    subject: z.union([z.literal("MP"), z.literal("HP"), z.literal("SP")]),
-    value: z.number(),
-    probability: z.number(),
+    subject: z.union([z.literal("MP"), z.literal("HP"), z.literal("ST")]),
+    percent: z.number(),
+    probability: z.number().optional(), // 発動確率
 });
-const costRatioBuff = z.object({
-    type: z.literal("costRatio"),
-    subject: z.union([z.literal("MP"), z.literal("HP"), z.literal("SP")]),
-    value: z.number(),
+const costChangeBuff = z.object({
+    type: z.literal("costChange"),
+    subject: z.union([z.literal("MP"), z.literal("HP"), z.literal("ST")]),
+    percent: z.number(),
 });
 const delayCutBuff = z.object({
     type: z.literal("delayCut"),
     subject: z.union([...ALL_SKILLS, z.literal("アイテム使用")]),
-    value: z.number(),
+    value: z.union([z.number(), z.literal("未検証")]),
 });
 const manufactureBuff = z.object({
     type: z.literal("manufacture"),
@@ -218,7 +219,7 @@ const preventBuff = z.object({
         z.literal("地属性"),
         z.literal("無属性"),
     ]),
-    ratio: z.union([z.number(), z.literal("未検証")]), // %表記（100%で完全に防ぐ）
+    percent: z.union([z.number(), z.literal("未検証")]), // %表記（100%で完全に防ぐ）
 });
 const avoidBuff = z.object({
     type: z.literal("avoid"),
@@ -229,7 +230,7 @@ const avoidBuff = z.object({
 const reflectionBuff = z.object({
     type: z.literal("reflection"),
     subject: z.union([z.literal("物理攻撃"), z.literal("魔法攻撃")]),
-    ratio: z.number(),
+    percent: z.number(),
     probability: z.number(),
 });
 const damageUpBuff = z.object({
@@ -267,7 +268,11 @@ const conversionBuff = z.object({
     type: z.literal("conversion"),
     from: effectSubjectSchema,
     to: effectSubjectSchema,
-    ratio: z.number(),
+    percent: z.number(),
+});
+const additionWhenAttackBuff = z.object({
+    type: z.literal("additionWhenAttack"),
+    description: z.string(),
 });
 export const buffSchema = z.union([
     z.object({
@@ -288,7 +293,7 @@ export const buffSchema = z.union([
             standMotionChangeBuff,
             moveMotionChangeBuff,
             recoveryBuff,
-            costRatioBuff,
+            costChangeBuff,
             delayCutBuff,
             manufactureBuff,
             techniqueBuff,
@@ -302,6 +307,7 @@ export const buffSchema = z.union([
             friendshipBuff,
             avoidBuff,
             conversionBuff,
+            additionWhenAttackBuff,
         ])),
     }),
 ]);

@@ -1,27 +1,41 @@
 [
 	{
 		"name": "死神の鎌",
-		"effects": [],
+		"effects": [
+			{
+				"type": "additionWhenAttack",
+				"description": "発動すると対象に1000ダメージ。"
+			}
+		],
 		"description": "没装備（ヘルサイス）のバフ"
 	},
 	{
 		"name": "急所突き",
 		"effects": [
-			{ "type": "followAttack", "subject": "発動時対象に250ダメージ" }
+			{
+				"type": "additionWhenAttack",
+				"description": "発動すると対象に250ダメージ。"
+			}
 		],
 		"description": "急所突き 2%"
 	},
 	{
 		"name": "仕込み毒",
 		"effects": [
-			{ "type": "followAttack", "subject": "1秒間隔で固定4ダメージ×4回のDoT" }
+			{
+				"type": "additionWhenAttack",
+				"description": "1秒間隔で固定4ダメージ×4回のDoT。ダメージ間隔はダイイングスタブと同じ。"
+			}
 		],
 		"description": "仕込み毒 20%"
 	},
 	{
 		"name": "灼熱の炎",
 		"effects": [
-			{ "type": "followAttack", "subject": " 1秒間隔で固定8ダメージ×3回のDoT" }
+			{
+				"type": "additionWhenAttack",
+				"description": "1秒間隔で固定8ダメージ×3回のDoT。エフェクトはブレイズ。"
+			}
 		],
 		"description": "灼熱の炎 30%"
 	},
@@ -33,20 +47,32 @@
 	},
 	{
 		"name": "衰弱",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "additionWhenAttack",
+				"description": "自分にHPスリップダメージのDebuff。効果時間は5秒程度。合計30ダメージ。"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "聖なる力",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "additionWhenAttack",
+				"description": "自分のHPが固定20回復。"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "電気ショック",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "additionWhenAttack",
+				"description": "固定20ダメージ＋麻痺のDebuff。効果時間は1秒弱。"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -57,14 +83,22 @@
 	},
 	{
 		"name": "MPダメージ",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "additionWhenAttack",
+				"description": "固定30MPダメージ"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "フィニッシュ ブロウ",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "additionWhenAttack",
+				"description": "固定25ダメージ＋若干のノックバック効果。ノックバックは劣化タックル程度※拳聖乱舞の最後に出す波動拳の様なエフェクト"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -75,20 +109,32 @@
 	},
 	{
 		"name": "フリーズ",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "additionWhenAttack",
+				"description": "固定30ダメージ"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "サンダーボルト",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "additionWhenAttack",
+				"description": "固定43ダメージ"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "カース Lv1",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "additionWhenAttack",
+				"description": "対PC ： 最大ST-5対NPC ： 最大HP-5"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -249,26 +295,42 @@
 	},
 	{
 		"name": "おもちゃのけん",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "additionWhenAttack",
+				"description": "垂直ノックバック効果。(ムーン ボヤージと同程度)悲鳴の効果音あり。古いものからbuff・debuffを1個消去する。"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "ボルケニック クロー",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "additionWhenAttack",
+				"description": "1秒間隔で固定2ダメージ×4回のDoT。エフェクトはブレイズ。"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "シューティングスター",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "additionWhenAttack",
+				"description": "対象の最大HPに比例した追加ダメージ。(ダメージ上限40)エフェクトはスターダスト。"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "ガンナーの極意",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "additionWhenAttack",
+				"description": "銃器による連射が可能となる武器固有技ガトリング ショットの前提条件。"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -279,44 +341,72 @@
 	},
 	{
 		"name": "スタミナ吸収 Lv1",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "additionWhenAttack",
+				"description": "※WarAgeでは性能が低下する対象にSTダメージを与え、自分のSTが等量回復する・Lv1 ： ST5ダメージ → ST5回復・Lv2 ： ST6ダメージ → ST6回復・Lv3 ： ST7ダメージ → ST7回復・Lv4 ： ST10ダメージ → ST10回復対NPCではSTダメージは発生しないが、STは吸収できる"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "スタミナ吸収 Lv2",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "additionWhenAttack",
+				"description": "※WarAgeでは性能が低下する対象にSTダメージを与え、自分のSTが等量回復する・Lv1 ： ST5ダメージ → ST5回復・Lv2 ： ST6ダメージ → ST6回復・Lv3 ： ST7ダメージ → ST7回復・Lv4 ： ST10ダメージ → ST10回復対NPCではSTダメージは発生しないが、STは吸収できる"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "スタミナ吸収 Lv3",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "additionWhenAttack",
+				"description": "※WarAgeでは性能が低下する対象にSTダメージを与え、自分のSTが等量回復する・Lv1 ： ST5ダメージ → ST5回復・Lv2 ： ST6ダメージ → ST6回復・Lv3 ： ST7ダメージ → ST7回復・Lv4 ： ST10ダメージ → ST10回復対NPCではSTダメージは発生しないが、STは吸収できる"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "スタミナ吸収 Lv4",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "additionWhenAttack",
+				"description": "※WarAgeでは性能が低下する対象にSTダメージを与え、自分のSTが等量回復する・Lv1 ： ST5ダメージ → ST5回復・Lv2 ： ST6ダメージ → ST6回復・Lv3 ： ST7ダメージ → ST7回復・Lv4 ： ST10ダメージ → ST10回復対NPCではSTダメージは発生しないが、STは吸収できる"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "スタミナ変換 Lv1",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "additionWhenAttack",
+				"description": "対象にMPダメージを与え、自分のSTが等量回復する・Lv1 ： MP5ダメージ → ST5回復・Lv2 ： MP6ダメージ → ST6回復・Lv3 ： "
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "スタミナ変換 Lv2",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "additionWhenAttack",
+				"description": "対象にMPダメージを与え、自分のSTが等量回復する・Lv1 ： MP5ダメージ → ST5回復・Lv2 ： MP6ダメージ → ST6回復・Lv3 ： "
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "スタミナ変換 Lv3",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "additionWhenAttack",
+				"description": "対象にMPダメージを与え、自分のSTが等量回復する・Lv1 ： MP5ダメージ → ST5回復・Lv2 ： MP6ダメージ → ST6回復・Lv3 ： "
+			}
+		],
 		"description": ""
 	},
 	{
@@ -327,14 +417,22 @@
 	},
 	{
 		"name": "魔法詠唱速度UP",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "additionWhenAttack",
+				"description": "魔法詠唱速度を一定時間除上昇させる(infoに誤字がある)自分と対象の双方に同じBuffが付く詠唱時間20%短縮、効果時間は30秒"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "甘い香り",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "additionWhenAttack",
+				"description": "甘い匂いがお互いを眠りへと誘う睡眠のDebuff。効果時間は2秒程度。自分と対象の双方に同じDebuffが付く。"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -363,206 +461,342 @@
 	},
 	{
 		"name": "束縛",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "additionWhenAttack",
+				"description": "移動速度低下のDebuff。効果時間は1秒程度。(死の魔法バインディングハンズの様なもの)"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "闇の力",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "additionWhenAttack",
+				"description": "対象にMP30ダメージを与え、自分のMP30回復。"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "吸血",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "additionWhenAttack",
+				"description": "固定25ダメージ(名前に騙されやすいがHP回復効果は無い)"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "ガトリング モード",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "additionWhenAttack",
+				"description": "通常攻撃の後にガトリングが発動するようになる※効果中は武器の持ち替えが出来ないBuff効果中は、アタックが以下の効果に変わる。・最大6hitの連撃技。・威力倍率は0.24×6回。(対象のACで大幅に軽減)・技扱いなので、クリティカルは発生しない。・特殊弾の追加効果は発生しない。・試作型のように強制転倒モーションは無い。"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "炎の力",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "additionWhenAttack",
+				"description": "対象に火傷による追加ダメージを与える1秒間隔で固定6ダメージ×4回のDoT。エフェクトはブレイズ。"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "氷の力",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "additionWhenAttack",
+				"description": "対象を凍傷にさせる移動速度が低下するDebuff。効果時間は2秒程度。"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "風の力",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "additionWhenAttack",
+				"description": "ノックバック効果。戦闘技術タックルのような効果。"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "地の力",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "additionWhenAttack",
+				"description": "対象の重量を増加させる所持重量が+50.0増加するDebuff。効果時間は2秒程度。"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "光の力",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "additionWhenAttack",
+				"description": "自身のDebuff/DoTを新しい順に4つ解除する。エフェクトはディバイン シャワー。"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "沌の力",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "additionWhenAttack",
+				"description": "対象を引き寄せる。神秘魔法コーリングのような効果。"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "火傷",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "additionWhenAttack",
+				"description": "火傷により徐々に体力を奪われるHPスリップダメージのDebuff。効果時間は1秒程度。合計10～12ダメージ程度。エフェクトはブレイズ。"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "神の裁き",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "additionWhenAttack",
+				"description": "固定9ダメージ。落雷エフェクト。"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "裂傷",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "additionWhenAttack",
+				"description": "HPスリップダメージのDebuff。効果時間は5秒程度。合計20ダメージ程度。"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "マジカル ヒット",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "additionWhenAttack",
+				"description": "敵をスタンさせる (効果は一瞬)"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "アラウンド ウィンド",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "additionWhenAttack",
+				"description": "身体の回りに 風が纏わり付き行動を鈍らせるステータス数値の変化無しディレイ増加効果も無し (おそらく未実装？微小な鈍足効果？)"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "チャージ時間延長",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "additionWhenAttack",
+				"description": "魔法チャージ中の 残り時間の減衰を遅くする(魔法熟練スペル エクステンションと同じ)Buff？残り時間が増加(あるいは回復)するBuff？"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "ジャッジメント サクション",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "additionWhenAttack",
+				"description": "固定MP10吸収"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "雲散霧消",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "additionWhenAttack",
+				"description": "対象の魔力をさげる魔力-20％のDebuff。効果時間は15秒。"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "キャプチャー ネット",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "additionWhenAttack",
+				"description": "対象を自分の立ち位置に引き寄せる。神秘魔法コーリングと同じ。"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "乱舞モード",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "additionWhenAttack",
+				"description": "Buff効果中は、アタックがhitした場合に限り、追撃が発動する。追加攻撃はフーリガン ダンスと同じ、3回の小範囲物理攻撃。※アタック時に違う武器を装備していると発動しない。"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "肉球アタック",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "additionWhenAttack",
+				"description": "攻撃時に猫の鳴き声を発する使用者に猫の手のエフェクト＋アビシニアンワルツ発動時の鳴き声＋短距離ノックバック効果。"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "いたずらしちゃうぞ",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "additionWhenAttack",
+				"description": "？対PC ： 対象を強制的に180度回転させる。"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "キノコ変化",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "additionWhenAttack",
+				"description": "対象を一定時間キノコに変化させる"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "ガン・バスター スラッシュ",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "additionWhenAttack",
+				"description": "近距離で攻撃した際に 刀剣による追加効果が発動するBuff効果中は、アタックがhitした場合に限り、追撃が発動する。威力は、刀剣スキル値に依存。(ATKは影響しない)射程が短く、近距離でないと発動しない。効果中ならば、武器を持ち替えても発動する。すでにブレイド系魔法がかかってる場合は効果は発動しない"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "トンファー アタック",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "additionWhenAttack",
+				"description": "通常攻撃後 追加攻撃が発動するBuff効果中は、アタックがhitした場合に限り、追撃が発動する。ペネトレイトキックとほぼ同じ効果、威力は1.5~1.7倍ほど高い。ペネトレイトキックとは併用不可で、靴が優先される。カカシに対して、キック100で41~42ダメージ"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "命の炎",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "additionWhenAttack",
+				"description": "対象の最大HPに比例した追加ダメージ。(ダメージ上限40)同時に自分は15程度のHPスリップダメージを受ける。"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "びっくりハンマー",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "additionWhenAttack",
+				"description": "敵をスタンさせる(効果は一瞬)"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "マンドレイクの叫び",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "additionWhenAttack",
+				"description": "対象に幻聴と幻覚を与え 戦意を消失させる行動不可のDebuff。効果時間は4秒程度。被ダメでの解除不可。MRPで解除可。"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "タイム サンド",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "additionWhenAttack",
+				"description": "敵の回避を減少させる攻撃した対象の回避を半減させる。効果時間は約7.5秒"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "水鉄砲",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "additionWhenAttack",
+				"description": "固定10ダメージ。ヒット時に水球が渦巻く。(アクアツイスターのエフェクトに近い)"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "ショックボルト",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "additionWhenAttack",
+				"description": "固定14ダメージ"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "魔法射撃モード",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "additionWhenAttack",
+				"description": "MP10消費して追加の魔法ダメージを与える。（弾も追加で消費する）MPが10未満の場合、追加魔法ダメージは発生しない。また、魔法射撃モードBuff発生中は移動できない。"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "MP変換",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "additionWhenAttack",
+				"description": "使用者の最大MPの1割を回復※対象にMPダメージを与えるわけではない"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "三点バースト",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "additionWhenAttack",
+				"description": "一度の攻撃で同時に3発の弾丸を撃つ。追加攻撃時に弾は消費しない。"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -579,14 +813,22 @@
 	},
 	{
 		"name": "満腹度UP",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "additionWhenAttack",
+				"description": "相手の満腹度を少量回復させる"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "龍の牙",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "additionWhenAttack",
+				"description": "固定12ダメージ×2回のDoT"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -609,26 +851,42 @@
 	},
 	{
 		"name": "ソウルハント",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "additionWhenAttack",
+				"description": "効果：ギロチン コールと同じ？"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "建御雷",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "additionWhenAttack",
+				"description": "通常攻撃HIT時に次のアタックに雷(風)属性の追加ダメージを与えるBuffが点灯するこの武器でbuffを点灯後別の武器でアタックをしても追加ダメージは発生する追加ダメージはライトニング ブレイドと同程度、ブレイドBuffと併用できるかは要検証サムライマスタリーとは併用できない。効果時間は8秒ほど※WarAgeでは効果が無い170926パッチで、追加効果発生時の仕様を変更"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "属性ダメージ",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "additionWhenAttack",
+				"description": "固定の魔法ダメージを与える固定60ダメージ※WarAgeでは効果が無い"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "HP吸収",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "additionWhenAttack",
+				"description": "通常攻撃HIT時にHPを吸収する※WarAgeでは効果が無い"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -749,7 +1007,7 @@
 			{
 				"type": "prevent",
 				"subject": "満腹度減少",
-				"ratio": 2
+				"percent": 2
 			}
 		],
 		"description": ""
@@ -759,7 +1017,7 @@
 		"effects": [
 			{
 				"type": "statusUp",
-				"subject": "死魔",
+				"subject": "死の魔法",
 				"value": 10
 			},
 			{
@@ -772,7 +1030,13 @@
 	},
 	{
 		"name": "黄昏の聖槍",
-		"effects": [{ "type": "damageUp", "subject": "悪魔", "value": 50 }],
+		"effects": [
+			{
+				"type": "damageUp",
+				"subject": "悪魔",
+				"value": 50
+			}
+		],
 		"description": "悪魔系に与えるダメージが増加する"
 	},
 	{
@@ -803,7 +1067,10 @@
 	{
 		"name": "アルカナの力",
 		"effects": [
-			{ "type": "recovery", "subject": "MP", "value": 10, "probability": 1 }
+			{
+				"type": "additionWhenAttack",
+				"description": "使用者のMPを10回復する。buff点灯はなし"
+			}
 		],
 		"noBuffSlot": true,
 		"description": ""
@@ -830,7 +1097,11 @@
 	},
 	{
 		"name": "炭火焼き",
-		"effects": [{ "type": "standMotionChange" }],
+		"effects": [
+			{
+				"type": "standMotionChange"
+			}
+		],
 		"description": "七輪で焼くモーション"
 	},
 	{
@@ -930,14 +1201,26 @@
 	},
 	{
 		"name": "モニコンの呪い",
-		"effects": [],
+		"effects": [
+			{
+				"type": "additionWhenAttack",
+				"description": "対象をエルモニー女に変身させる。効果時間不明"
+			}
+		],
 		"description": "対象をエルモニー女に変身させる"
 	},
 	{
 		"name": "エイシスの青い天使さん",
 		"effects": [
-			{ "type": "others", "subject": "#魔力→攻撃力変換バフ 30%" },
-			{ "type": "damageUp", "subject": "鳥", "value": 100 }
+			{
+				"type": "others",
+				"subject": "魔力→攻撃力変換バフ 30%"
+			},
+			{
+				"type": "damageUp",
+				"subject": "鳥",
+				"value": 100
+			}
 		],
 		"description": "魔力の30%を攻撃力に加算して、鳥系に対して特攻効果が付与される"
 	},
@@ -955,16 +1238,31 @@
 	{
 		"name": "海神の加護",
 		"effects": [
-			{ "type": "statusUp", "subject": "ST自然回復", "value": 42 },
-			{ "type": "prevent", "subject": "水中呼吸減少", "ratio": 100 }
+			{
+				"type": "statusUp",
+				"subject": "ST自然回復",
+				"value": 42
+			},
+			{
+				"type": "prevent",
+				"subject": "水中呼吸減少",
+				"percent": 100
+			}
 		],
 		"description": "水中で呼吸が可能になり、スタミナの自然回復が上昇する"
 	},
 	{
 		"name": "邪竜の力",
 		"effects": [
-			{ "type": "others", "subject": "#魔力→攻撃力変換バフ 35%" },
-			{ "type": "statusUp", "subject": "暗黒命令", "value": 10 }
+			{
+				"type": "others",
+				"subject": "#魔力→攻撃力変換バフ 35%"
+			},
+			{
+				"type": "statusUp",
+				"subject": "暗黒命令",
+				"value": 10
+			}
 		],
 		"description": "邪竜の力で暗黒命令の効果が上昇し、魔力の35%を攻撃力に加算する"
 	},
@@ -1024,8 +1322,12 @@
 	},
 	{
 		"name": "分解",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "additionWhenAttack",
+				"description": "有益な効果を1つ消す "
+			}
+		],
 		"description": ""
 	},
 	{
@@ -1234,14 +1536,22 @@
 	},
 	{
 		"name": "Gスカルパス フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "Gスカルパス"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "フィッシュ フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "フィッシュ"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -1738,8 +2048,12 @@
 	},
 	{
 		"name": "エッグ フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "エッグ"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -1786,14 +2100,22 @@
 	},
 	{
 		"name": "バジリスク フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "バジリスク"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "ファンガス フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "ファンガス"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -1888,8 +2210,12 @@
 	},
 	{
 		"name": "ガーゴイル フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "ガーゴイル"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -1966,32 +2292,52 @@
 	},
 	{
 		"name": "デドリーポイズン フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "デドリーポイズン"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "サラマンダー フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "サラマンダー"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "キラープラント フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "キラープラント"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "グリードル フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "グリードル"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "エイ フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "エイ"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -2404,8 +2750,12 @@
 	},
 	{
 		"name": "ビーク フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "ビーク"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -2536,8 +2886,12 @@
 	},
 	{
 		"name": "スノーマン フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "スノーマン"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -2584,50 +2938,82 @@
 	},
 	{
 		"name": "邪神フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "邪神"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "ブラック ライノー フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "ブラック ライノー"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "サウザンド ドラゴン フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "サウザンド ドラゴン"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "ボーイ フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "ボーイ"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "ガール フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "ガール"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "キマイラ フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "キマイラ"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "フィニュ フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "フィニュ"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "魔法少女 フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "魔法少女"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -2662,8 +3048,12 @@
 	},
 	{
 		"name": "ビースト フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "ビースト"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -2722,14 +3112,22 @@
 	},
 	{
 		"name": "プルルーム フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "プルルーム"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "リザードマン フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "リザードマン"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -2908,44 +3306,72 @@
 	},
 	{
 		"name": "雄鶏フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "雄鶏"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "雌鶏フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "雌鶏"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "ひよこフォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "ひよこ"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "幻獣ユニコーン フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "幻獣ユニコーン"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "ナイトメア フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "ナイトメア"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "ウンディーネの幼精 フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "ウンディーネの幼精"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "サラマンダーの幼精 フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "サラマンダーの幼精"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -3058,8 +3484,12 @@
 	},
 	{
 		"name": "ウェディング フィニュ フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "ウェディング フィニュ"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -3100,8 +3530,12 @@
 	},
 	{
 		"name": "ぷにこフォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "ぷにこ"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -3118,14 +3552,22 @@
 	},
 	{
 		"name": "浴衣フィニュ フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "浴衣フィニュ"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "スカイ ドラゴン フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "スカイ ドラゴン"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -3172,14 +3614,22 @@
 	},
 	{
 		"name": "シルフ＆ノームの幼精 フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "シルフ＆ノームの幼精"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "モール フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "モール"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -3190,14 +3640,22 @@
 	},
 	{
 		"name": "妖狐フィニュ フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "妖狐フィニュ"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "ハロウィン フィニュ フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "ハロウィン フィニュ"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -3238,50 +3696,82 @@
 	},
 	{
 		"name": "アトルーム フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "アトルーム"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "ローセウム フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "ローセウム"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "アールブム フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "アールブム"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "フラウ フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "フラウ"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "イリヤフィニュ フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "イリヤフィニュ"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "美遊フィニュ フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "美遊フィニュ"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "クロエフィニュ フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "クロエフィニュ"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "ツヴァイフォームフィニュ フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "ツヴァイフォームフィニュ"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -3298,8 +3788,12 @@
 	},
 	{
 		"name": "箱入り娘 フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "箱入り娘"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -3316,44 +3810,72 @@
 	},
 	{
 		"name": "ファンガスちゃん フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "ファンガスちゃん"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "ルミナスちゃん フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "ルミナスちゃん"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "ポイズンちゃん フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "ポイズンちゃん"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "タヌキ フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "タヌキ"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "キツネ フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "キツネ"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "ぽこ太 フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "ぽこ太"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "ヨーコ フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "ヨーコ"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -3370,14 +3892,22 @@
 	},
 	{
 		"name": "イーグル フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "イーグル"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "お雛様フィニュ フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "お雛様フィニュ"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -3406,38 +3936,62 @@
 	},
 	{
 		"name": "セーラーフィニュ フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "セーラーフィニュ"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "モノアイロボ フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "モノアイロボ"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "メリイ フィニュ フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "メリイ フィニュ"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "ゴブリン フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "ゴブリン"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "ユメ フィニュ フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "ユメ フィニュ"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "シホル フィニュ フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "シホル フィニュ"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -3502,8 +4056,12 @@
 	},
 	{
 		"name": "人食い箱 フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "人食い箱"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -3538,20 +4096,32 @@
 	},
 	{
 		"name": "ヒルデ フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "ヒルデ"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "かき氷フォーム(イチゴ)",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "かき氷フォーム(イチゴ)"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "かき氷フォーム(ブルーハワイ)",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "かき氷フォーム(ブルーハワイ)"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -3616,8 +4186,12 @@
 	},
 	{
 		"name": "リリス フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "リリス"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -3628,20 +4202,32 @@
 	},
 	{
 		"name": "あびにゃん フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "あびにゃん"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "TIT-P-12 フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "TIT-P-12"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "EVI-B-12 フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "EVI-B-12"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -3670,8 +4256,12 @@
 	},
 	{
 		"name": "小妖精フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "小妖精"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -3754,8 +4344,12 @@
 	},
 	{
 		"name": "スノーホワイト フィニュ フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "スノーホワイト フィニュ"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -3868,26 +4462,42 @@
 	},
 	{
 		"name": "ユキ フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "ユキ"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "ユキ(人型) フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "ユキ(人型)"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "フェザー ドラゴン フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "フェザー ドラゴン"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "グランフェザー ドラゴン フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "グランフェザー ドラゴン"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -3970,8 +4580,12 @@
 	},
 	{
 		"name": "マンドラゴラ フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "マンドラゴラ"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -3994,8 +4608,12 @@
 	},
 	{
 		"name": "こぺんぎん フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "こぺんぎん"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -4006,26 +4624,42 @@
 	},
 	{
 		"name": "ポコ太(大人) フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "ポコ太(大人)"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "ヨーコ(大人) フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "ヨーコ(大人)"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "アイネ フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "アイネ"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "アイネ(人型) フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "アイネ(人型)"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -4144,8 +4778,12 @@
 	},
 	{
 		"name": "ハンド フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "ハンド"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -4174,20 +4812,32 @@
 	},
 	{
 		"name": "赤ちゃん ライオン フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "赤ちゃん ライオン"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "黒ライオン(雄) フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "黒ライオン(雄)"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "白ライオン(雄) フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "白ライオン(雄)"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -4210,20 +4860,32 @@
 	},
 	{
 		"name": "壺魔人フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "壺魔人"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "ねこまた フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "ねこまた"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "アクアウィンガー フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "アクアウィンガー"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -4294,8 +4956,12 @@
 	},
 	{
 		"name": "死神メア フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "死神メア"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -4354,56 +5020,92 @@
 	},
 	{
 		"name": "ハムスケ フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "ハムスケ"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "アークエンジェル・フレイム フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "アークエンジェル・フレイム"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "鳥獣戯画フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "鳥獣戯画"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "赤ひよこ フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "赤ひよこ"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "青ひよこ フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "青ひよこ"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "緑ひよこ フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "緑ひよこ"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "桃ひよこ フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "桃ひよこ"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "黄ひよこ フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "黄ひよこ"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "メカひよこ フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "メカひよこ"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -4612,14 +5314,22 @@
 	},
 	{
 		"name": "ハーデス フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "ハーデス"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "エンペラー ペンギン フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "エンペラー ペンギン"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -4666,8 +5376,12 @@
 	},
 	{
 		"name": "カルゴーシュ フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "カルゴーシュ"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -4738,8 +5452,12 @@
 	},
 	{
 		"name": "リリカルなのは フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "リリカルなのは"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -4780,32 +5498,52 @@
 	},
 	{
 		"name": "IGK Dark フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "IGK Dark"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "ピクシーシャドウ フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "ピクシーシャドウ"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "ワイバーン(青) フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "ワイバーン(青)"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "サベージ フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "サベージ"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "サベージボス フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "サベージボス"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -4828,14 +5566,22 @@
 	},
 	{
 		"name": "ドワーフ（女）フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "ドワーフ（女）"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "ドワーフ（女鎧）フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "ドワーフ（女鎧）"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -4858,8 +5604,12 @@
 	},
 	{
 		"name": "リセ フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "リセ"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -4888,26 +5638,42 @@
 	},
 	{
 		"name": "ラハール フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "ラハール"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "エトナ フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "エトナ"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "フロン フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "フロン"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "プリニー フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "プリニー"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -4966,8 +5732,12 @@
 	},
 	{
 		"name": "ジャック・オ・ランタン フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "ジャック・オ・ランタン"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -4990,8 +5760,12 @@
 	},
 	{
 		"name": "ゴリラ フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "ゴリラ"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -5002,8 +5776,12 @@
 	},
 	{
 		"name": "牛若丸 フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "牛若丸"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -5020,8 +5798,12 @@
 	},
 	{
 		"name": "かき氷フォーム(レモン)",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "かき氷フォーム(レモン)"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -5098,8 +5880,12 @@
 	},
 	{
 		"name": "わんこ フィニュ フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "わんこ フィニュ"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -5122,14 +5908,22 @@
 	},
 	{
 		"name": "黒柴フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "黒柴"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "犬神フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "犬神"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -5146,14 +5940,22 @@
 	},
 	{
 		"name": "いやしましゅまろフォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "いやしましゅまろ"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "くましゅフォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "くましゅ"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -5218,8 +6020,12 @@
 	},
 	{
 		"name": "トイソルジャー フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "トイソルジャー"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -5230,14 +6036,22 @@
 	},
 	{
 		"name": "箱入り息子 フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "箱入り息子"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "モアイ フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "モアイ"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -5254,20 +6068,32 @@
 	},
 	{
 		"name": "アイリ フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "アイリ"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "アイリ(人型) フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "アイリ(人型)"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "シロフクロウ フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "シロフクロウ"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -5308,20 +6134,32 @@
 	},
 	{
 		"name": "コンバイン フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "コンバイン"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "太陽の精霊フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "太陽の精霊"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "月と星の精霊フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "月と星の精霊"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -5482,14 +6320,22 @@
 	},
 	{
 		"name": "もかましゅフォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "もかましゅ"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "ねこましゅフォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "ねこましゅ"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -5500,20 +6346,32 @@
 	},
 	{
 		"name": "ラフエル フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "ラフエル"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "アルテス フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "アルテス"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "太陽の大精霊 フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "太陽の大精霊"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -5638,8 +6496,12 @@
 	},
 	{
 		"name": "ファルサリア フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "ファルサリア"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -5680,20 +6542,32 @@
 	},
 	{
 		"name": "錬金アーサーフィニュ フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "錬金アーサーフィニュ"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "盗賊アーサーフィニュ フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "盗賊アーサーフィニュ"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "鮫 フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "鮫"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -5722,8 +6596,12 @@
 	},
 	{
 		"name": "にじよめちゃん フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "にじよめちゃん"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -5746,8 +6624,12 @@
 	},
 	{
 		"name": "ジャッカロープ フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "ジャッカロープ"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -5812,20 +6694,32 @@
 	},
 	{
 		"name": "いちごましゅ フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "いちごましゅ"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "くろましゅ フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "くろましゅ"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "うさぎましゅ フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "うさぎましゅ"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -5896,14 +6790,22 @@
 	},
 	{
 		"name": "月と星の大精霊フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "月と星の大精霊"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "シニスター フィニュ フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "シニスター フィニュ"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -5932,8 +6834,12 @@
 	},
 	{
 		"name": "チョコあびにゃん フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "チョコあびにゃん"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -5968,8 +6874,12 @@
 	},
 	{
 		"name": "恋するメスゴリラ フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "恋するメスゴリラ"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -6058,32 +6968,52 @@
 	},
 	{
 		"name": "無人販売機フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "無人販売機"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "モモ フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "モモ"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "モモ(人型) フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "モモ(人型)"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "キラー ドリアード フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "キラー ドリアード"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "カーニバル象 フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "カーニバル象"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -6190,8 +7120,12 @@
 	},
 	{
 		"name": "夏天清魚フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "夏天清魚"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -6418,14 +7352,22 @@
 	},
 	{
 		"name": "冥神アル フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "冥神アル"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "千年結晶竜アナ フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "千年結晶竜アナ"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -6502,8 +7444,12 @@
 	},
 	{
 		"name": "カオス アビシニアン フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "カオス アビシニアン"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -6538,14 +7484,22 @@
 	},
 	{
 		"name": "スノー フェアリー フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "スノー フェアリー"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "シマエナガ フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "シマエナガ"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -6604,32 +7558,52 @@
 	},
 	{
 		"name": "カツヲ フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "カツヲ"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "クロマグロ フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "クロマグロ"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "ベビーシープ フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "ベビーシープ"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "エルダーシープ（オス） フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "エルダーシープ（オス）"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "エルダーシープ（メス） フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "エルダーシープ（メス）"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -6802,32 +7776,52 @@
 	},
 	{
 		"name": "アカツキ フィニュ フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "アカツキ フィニュ"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "にゃん太 フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "にゃん太"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "ルセアート（黒騎士） フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "ルセアート（黒騎士）"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "ルセアート（白騎士） フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "ルセアート（白騎士）"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "影の尖兵 フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "影の尖兵"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -6850,8 +7844,12 @@
 	},
 	{
 		"name": "水風船フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "水風船"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -6898,8 +7896,12 @@
 	},
 	{
 		"name": "魔神ベリアル フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "魔神ベリアル"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -6946,56 +7948,92 @@
 	},
 	{
 		"name": "メタビー フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "メタビー"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "ロクショウ フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "ロクショウ"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "アークビートル フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "アークビートル"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "ディアステージ フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "ディアステージ"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "ペッパーキャット フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "ペッパーキャット"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "ゴッドエンペラー フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "ゴッドエンペラー"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "クロスメサイア フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "クロスメサイア"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "Gメタビー フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "Gメタビー"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "Pロクショウ フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "Pロクショウ"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -7084,20 +8122,32 @@
 	},
 	{
 		"name": "千年結晶竜（赤）フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "千年結晶竜（赤）"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "千年結晶竜ルナ フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "千年結晶竜ルナ"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "ヘッドレスナイト フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "ヘッドレスナイト"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -7138,26 +8188,42 @@
 	},
 	{
 		"name": "チンチラ キャット フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "チンチラ キャット"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "ブラック ソリッド フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "ブラック ソリッド"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "ヒマラヤン フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "ヒマラヤン"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "青猫 フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "青猫"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -7180,20 +8246,32 @@
 	},
 	{
 		"name": "ちょこましゅ フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "ちょこましゅ"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "ひなましゅ フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "ひなましゅ"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "ぶたましゅ フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "ぶたましゅ"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -7252,8 +8330,12 @@
 	},
 	{
 		"name": "マンイータープラント フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "マンイータープラント"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -7282,8 +8364,12 @@
 	},
 	{
 		"name": "ラン フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "ラン"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -7372,38 +8458,62 @@
 	},
 	{
 		"name": "女神官フィニュ フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "女神官フィニュ"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "妖精弓手フィニュ フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "妖精弓手フィニュ"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "小鬼 フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "小鬼"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "竜牙兵 フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "竜牙兵"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "カッシー（オス） フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "カッシー（オス）"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "カッシー（メス） フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "カッシー（メス）"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -7414,20 +8524,32 @@
 	},
 	{
 		"name": "小鬼呪術師フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "小鬼呪術師"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "田舎者フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "田舎者"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "小鬼英雄フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "小鬼英雄"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -7510,62 +8632,102 @@
 	},
 	{
 		"name": "スノーホワイト フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "スノーホワイト"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "ラ・ピュセル フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "ラ・ピュセル"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "リップル フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "リップル"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "トップスピード フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "トップスピード"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "赤柴 フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "赤柴"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "白柴 フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "白柴"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "緑柴 フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "緑柴"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "赤柴(成犬) フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "赤柴(成犬)"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "白柴(成犬) フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "白柴(成犬)"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "緑柴(成犬) フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "緑柴(成犬)"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -7576,8 +8738,12 @@
 	},
 	{
 		"name": "エリンギくん フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "エリンギくん"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -7630,20 +8796,32 @@
 	},
 	{
 		"name": "トランスフォーム・タイタン！",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "トランスフォーム・タイタン！"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "千年結晶竜エナ フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "千年結晶竜エナ"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "武神メア フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "武神メア"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -7654,8 +8832,12 @@
 	},
 	{
 		"name": "鎧の兵士 フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "鎧の兵士"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -7744,20 +8926,32 @@
 	},
 	{
 		"name": "赤龍帝 フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "赤龍帝"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "小猫フィニュ フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "小猫フィニュ"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "九重フィニュ フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "九重フィニュ"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -7882,8 +9076,12 @@
 	},
 	{
 		"name": "キーウィ？ フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "キーウィ？"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -7900,8 +9098,12 @@
 	},
 	{
 		"name": "火神イグニス フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "火神イグニス"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -7978,8 +9180,12 @@
 	},
 	{
 		"name": "おばけのチャーリー フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "おばけのチャーリー"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -8008,8 +9214,12 @@
 	},
 	{
 		"name": "竜王フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "竜王"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -8056,8 +9266,12 @@
 	},
 	{
 		"name": "みにへいし フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "みにへいし"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -8092,20 +9306,32 @@
 	},
 	{
 		"name": "シュシュポップ フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "シュシュポップ"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "ブレザーメイツ フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "ブレザーメイツ"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "ハードネステン フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "ハードネステン"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -8128,8 +9354,12 @@
 	},
 	{
 		"name": "チャーリーライト フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "チャーリーライト"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -8212,8 +9442,12 @@
 	},
 	{
 		"name": "ジュエリーフィッシュ フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "ジュエリーフィッシュ"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -8302,20 +9536,32 @@
 	},
 	{
 		"name": "リューフィニュ フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "リューフィニュ"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "アイズフィニュ フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "アイズフィニュ"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "ミニ ジャガーノート フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "ミニ ジャガーノート"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -8410,51 +9656,132 @@
 	},
 	{
 		"name": "モルモット（黄） フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "モルモット（黄）"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "デスナイト（赤） フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "デスナイト（赤）"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "猛牛の力",
-		"unedited": true,
-		"effects": [],
-		"description": ""
+		"effects": [
+			{
+				"type": "statusUp",
+				"subject": "攻撃力",
+				"value": 3,
+				"numberType": "percent"
+			},
+			{
+				"type": "statusUp",
+				"subject": "攻撃ディレイ",
+				"value": -10
+			}
+		],
+		"description": "攻撃力と攻撃速度が上昇する"
 	},
 	{
 		"name": "水精の加護",
-		"unedited": true,
-		"effects": [],
-		"description": ""
+		"effects": [
+			{
+				"type": "statusUp",
+				"subject": "水属性効果",
+				"value": 20
+			},
+			{
+				"type": "prevent",
+				"subject": "水属性",
+				"percent": "未検証"
+			}
+		],
+		"description": "水属性のダメージが上昇して、水属性のダメージを軽減する"
 	},
 	{
 		"name": "漆黒のベール",
-		"unedited": true,
-		"effects": [],
-		"description": ""
+		"effects": [
+			{
+				"type": "statusUp",
+				"subject": "暗黒命令",
+				"value": 10
+			},
+			{
+				"type": "statusUp",
+				"subject": "死の魔法",
+				"value": 10
+			}
+		],
+		"description": "暗黒命令と死の魔法の効果が上昇する"
 	},
 	{
 		"name": "マジック チャーム",
-		"unedited": true,
-		"effects": [],
-		"description": ""
+		"effects": [
+			{
+				"type": "statusUp",
+				"subject": "破壊",
+				"value": 5
+			},
+			{
+				"type": "statusUp",
+				"subject": "強化",
+				"value": 5
+			},
+			{
+				"type": "statusUp",
+				"subject": "神秘",
+				"value": 5
+			},
+			{
+				"type": "statusUp",
+				"subject": "回復",
+				"value": 5
+			}
+		],
+		"description": "破壊/強化/神秘/回復の4魔法効果が少しずつ上昇する"
 	},
 	{
 		"name": "ゴルファー",
-		"unedited": true,
-		"effects": [],
-		"description": ""
+		"effects": [
+			{
+				"type": "statusUp",
+				"subject": "命中",
+				"value": 5,
+				"numberType": "percent"
+			},
+			{
+				"type": "statusUp",
+				"subject": "自然調和",
+				"value": 20
+			}
+		],
+		"description": "命中率と自然調和スキルの効果が上昇する"
 	},
 	{
 		"name": "スライミィ ボディ",
-		"unedited": true,
-		"effects": [],
-		"description": ""
+		"effects": [
+			{
+				"type": "statusUp",
+				"subject": "回避",
+				"value": 15,
+				"numberType": "percent"
+			},
+			{
+				"type": "prevent",
+				"subject": "物理攻撃",
+				"percent": 15
+			}
+		],
+		"description": "体がスライムのように軟体化し、ダメージを軽減して回避率が大幅に上昇する"
 	},
 	{
 		"name": "無重力感",
@@ -8464,219 +9791,656 @@
 	},
 	{
 		"name": "フラワー ブレッシング",
-		"unedited": true,
-		"effects": [],
-		"description": ""
+		"effects": [
+			{
+				"type": "statusUp",
+				"subject": "ST自然回復",
+				"value": 56
+			},
+			{
+				"type": "recovery",
+				"subject": "MP",
+				"percent": 3
+			}
+		],
+		"description": "スタミナの自然回復量が増加して、与えたダメージの3%分のMPを回復する"
 	},
 	{
 		"name": "サモンズ ソード",
-		"unedited": true,
-		"effects": [],
-		"description": ""
+		"effects": [
+			{
+				"type": "standMotionChange"
+			},
+			{
+				"type": "moveMotionChange"
+			},
+			{
+				"type": "conversion",
+				"from": "魔力",
+				"to": "攻撃力",
+				"percent": 10
+			},
+			{
+				"type": "technique",
+				"subject": "インフィニティ ブレイド"
+			}
+		],
+		"description": "移動モーションが変化して、魔力の10%を攻撃力に上乗せする 専用技『 インフィニティ ブレイド 』が使用可能になる"
 	},
 	{
 		"name": "蒸気の力",
-		"unedited": true,
-		"effects": [],
-		"description": ""
+		"effects": [
+			{
+				"type": "statusUp",
+				"subject": "物理与ダメージ",
+				"value": 10,
+				"numberType": "percent"
+			},
+			{
+				"type": "statusUp",
+				"subject": "攻撃ディレイ",
+				"value": -10
+			}
+		],
+		"description": "蒸気の力で加速させて、威力と速度を上昇させる※攻撃力依存のダメージが少し上昇して、攻撃ディレイが減少する"
 	},
 	{
 		"name": "独楽",
-		"unedited": true,
-		"effects": [],
-		"description": ""
+		"effects": [
+			{
+				"type": "statusUp",
+				"subject": "回避",
+				"value": 15,
+				"numberType": "percent"
+			},
+			{
+				"type": "standMotionChange"
+			},
+			{
+				"type": "moveMotionChange"
+			}
+		],
+		"description": "高速回転で敵の攻撃を受け流し、回避率を大幅に高める"
 	},
 	{
 		"name": "ロックスター",
-		"unedited": true,
-		"effects": [],
-		"description": ""
+		"effects": [
+			{
+				"type": "statusUp",
+				"subject": "シャウト",
+				"value": 15
+			},
+			{
+				"type": "statusUp",
+				"subject": "ダンス",
+				"value": 15
+			}
+		],
+		"description": "シャウトとダンスの効果が15上昇する"
 	},
 	{
 		"name": "武神流の極意",
-		"unedited": true,
-		"effects": [],
-		"description": ""
+		"effects": [
+			{
+				"type": "statusUp",
+				"subject": "攻撃力",
+				"value": 3,
+				"numberType": "percent"
+			},
+			{
+				"type": "statusUp",
+				"subject": "クリティカル率",
+				"value": 15
+			},
+			{
+				"type": "moveMotionChange"
+			}
+		],
+		"description": "攻撃力とクリティカル率が上昇して、移動モーションが変化する"
 	},
 	{
 		"name": "暗器の鉤爪",
-		"unedited": true,
-		"effects": [],
-		"description": ""
+		"effects": [
+			{
+				"type": "statusUp",
+				"subject": "物まね",
+				"value": 15
+			},
+			{
+				"type": "statusUp",
+				"subject": "罠",
+				"value": 15
+			},
+			{
+				"type": "followAttack",
+				"subject": "vsささみ：16(罠0)〜41(罠115)のDoT3回"
+			}
+		],
+		"description": "物まねと罠スキルの効果が15上昇し、鉤爪に塗られた毒で通常攻撃時に追加ダメージを与える"
 	},
 	{
 		"name": "神眼の力",
-		"unedited": true,
-		"effects": [],
-		"description": ""
+		"effects": [
+			{
+				"type": "statusUp",
+				"subject": "命中",
+				"value": 10,
+				"numberType": "percent"
+			},
+			{
+				"type": "statusUp",
+				"subject": "回避",
+				"value": 10,
+				"numberType": "percent"
+			},
+			{
+				"type": "statusUp",
+				"subject": "神秘",
+				"value": 10
+			}
+		],
+		"description": "数舜先の未来を見ることで命中と回避が上昇し、神秘魔法の効果も上昇する"
 	},
 	{
 		"name": "闇纏",
-		"unedited": true,
-		"effects": [],
-		"description": ""
+		"effects": [
+			{
+				"type": "statusUp",
+				"subject": "自然調和",
+				"value": 20
+			},
+			{
+				"type": "statusUp",
+				"subject": "移動速度",
+				"value": 5,
+				"numberType": "percent"
+			},
+			{
+				"type": "friendship",
+				"all": true
+			}
+		],
+		"description": "自然調和スキルの効果と移動速度が上昇し、闇を纏い闇に紛れることで敵に気づかれにくくなる"
 	},
 	{
 		"name": "竜帝フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "竜帝"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "クマノミ フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "クマノミ"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "重騎兵の力",
-		"unedited": true,
-		"effects": [],
-		"description": ""
+		"effects": [
+			{
+				"type": "statusUp",
+				"subject": "攻撃力",
+				"value": 3,
+				"numberType": "percent"
+			},
+			{
+				"type": "statusUp",
+				"subject": "防御力",
+				"value": 5,
+				"numberType": "percent"
+			},
+			{
+				"type": "statusUp",
+				"subject": "移動速度",
+				"value": 5,
+				"numberType": "percent"
+			},
+			{
+				"type": "delayCut",
+				"subject": "槍",
+				"value": "未検証"
+			}
+		],
+		"description": "攻撃力と防御力と移動速度が上昇し、槍技のディレイが短縮される"
 	},
 	{
 		"name": "強化の刻印",
-		"unedited": true,
-		"effects": [],
-		"description": ""
+		"effects": [
+			{
+				"type": "statusUp",
+				"subject": "攻撃力",
+				"value": 3,
+				"numberType": "percent"
+			},
+			{
+				"type": "statusUp",
+				"subject": "魔力",
+				"value": 3,
+				"numberType": "percent"
+			},
+			{
+				"type": "statusUp",
+				"subject": "強化",
+				"value": 15
+			}
+		],
+		"description": "攻撃力と魔力と強化魔法の効果が上昇する"
 	},
 	{
 		"name": "ウミウシ",
-		"unedited": true,
-		"effects": [],
-		"description": ""
+		"effects": [
+			{
+				"type": "standMotionChange"
+			},
+			{
+				"type": "moveMotionChange"
+			},
+			{
+				"type": "statusUp",
+				"subject": "HP自然回復",
+				"value": 112
+			},
+			{
+				"type": "prevent",
+				"subject": "水中呼吸減少",
+				"percent": 100
+			}
+		],
+		"description": "待機と移動モーションが変化、HP回復速度が上昇しして水中で呼吸が可能になる"
 	},
 	{
 		"name": "リスキー ベット",
-		"unedited": true,
-		"effects": [],
-		"description": ""
+		"effects": [
+			{
+				"type": "statusUp",
+				"subject": "クリティカル率",
+				"value": 30
+			},
+			{
+				"type": "statusUp",
+				"subject": "被クリティカル率",
+				"value": 70
+			}
+		],
+		"description": "クリティカル発生率が30%上昇するが、クリティカルを受ける確率が70%上昇し、夜間のみ攻撃力が増加する"
 	},
 	{
 		"name": "アイドル フィニュ フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "アイドル フィニュ"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "エンジェル ピッグ フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "エンジェル ピッグ"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "戦神オーディン フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "戦神オーディン"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "魅惑のマーメイド",
-		"unedited": true,
-		"effects": [],
-		"description": ""
+		"effects": [
+			{
+				"type": "statusUp",
+				"subject": "水属性効果",
+				"value": 10,
+				"numberType": "percent"
+			},
+			{
+				"type": "prevent",
+				"subject": "水中呼吸減少",
+				"percent": 100
+			},
+			{
+				"type": "statusUp",
+				"subject": "MP自然回復",
+				"value": "未検証"
+			}
+		],
+		"description": "水属性の効果が上昇して、水中呼吸が可能になり、MPの自然回復速度が少し上昇する"
 	},
 	{
 		"name": "サモエド フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "サモエド"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "インフェルノ ゴーレム フォーム",
-		"unedited": true,
-		"effects": [],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "インフェルノ ゴーレム"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "猛獣の爪",
-		"unedited": true,
-		"effects": [],
-		"description": ""
+		"effects": [
+			{
+				"type": "statusUp",
+				"subject": "回避",
+				"value": 5,
+				"numberType": "percent"
+			},
+			{
+				"type": "statusUp",
+				"subject": "攻撃ディレイ",
+				"value": -10
+			}
+		],
+		"description": "回避が上昇して、攻撃ディレイが減少する"
 	},
 	{
 		"name": "獣人の加護",
-		"unedited": true,
-		"effects": [],
-		"description": ""
+		"effects": [
+			{
+				"type": "statusUp",
+				"subject": "調教",
+				"value": 10
+			},
+			{
+				"type": "prevent",
+				"subject": "ペット死亡時忠誠減少",
+				"percent": 50
+			},
+			{
+				"type": "friendship",
+				"subject": ["獣"]
+			}
+		],
+		"description": "調教スキルの効果が上昇して、ペット死亡時の忠誠度低下を半減させる"
 	},
 	{
 		"name": "獣蹄",
-		"unedited": true,
-		"effects": [],
-		"description": ""
+		"effects": [
+			{
+				"type": "statusUp",
+				"subject": "キック",
+				"value": 10
+			},
+			{
+				"type": "statusUp",
+				"subject": "移動速度",
+				"value": 5,
+				"numberType": "percent"
+			}
+		],
+		"description": "キックの効果が上昇し、移動速度が5%上昇する"
 	},
 	{
 		"name": "鮫人",
-		"unedited": true,
-		"effects": [],
-		"description": ""
+		"effects": [
+			{
+				"type": "standMotionChange"
+			},
+			{
+				"type": "moveMotionChange"
+			},
+			{
+				"type": "statusUp",
+				"subject": "水中速度",
+				"value": 10
+			}
+		],
+		"description": "待機と移動モーションが変化し、水中移動速度が上昇する"
 	},
 	{
 		"name": "守護霊",
-		"unedited": true,
-		"effects": [],
-		"description": ""
+		"effects": [
+			{
+				"type": "prevent",
+				"subject": "病気",
+				"percent": 100
+			},
+			{
+				"type": "statusUp",
+				"subject": "防御力",
+				"value": 10
+			},
+			{
+				"type": "statusUp",
+				"subject": "耐無属性",
+				"value": "未検証"
+			}
+		],
+		"description": "病気の状態異常を解除して、防御力と無抵抗が上昇する"
 	},
 	{
 		"name": "憑物",
-		"unedited": true,
-		"effects": [],
-		"description": ""
+		"effects": [
+			{
+				"type": "statusUp",
+				"subject": "暗黒命令",
+				"value": 5
+			},
+			{
+				"type": "statusUp",
+				"subject": "所持重量",
+				"value": 20,
+				"numberType": "percent"
+			}
+		],
+		"description": "暗黒命令の効果が少し上昇するが、体が重く感じる"
 	},
 	{
 		"name": "三つの願い",
-		"unedited": true,
-		"effects": [],
-		"description": ""
+		"effects": [
+			{
+				"type": "statusUp",
+				"subject": "ペット経験値",
+				"value": 5,
+				"numberType": "percent"
+			},
+			{
+				"type": "statusUp",
+				"subject": "物理与ダメージ",
+				"value": 5,
+				"numberType": "percent"
+			},
+			{
+				"type": "statusUp",
+				"subject": "所持重量",
+				"value": -10,
+				"numberType": "percent"
+			}
+		],
+		"description": "与えるダメージが少し増加し、ペットの成長率が少し上昇して、重量が軽くなる"
 	},
 	{
 		"name": "悪魔の力",
-		"unedited": true,
-		"effects": [],
-		"description": ""
+		"effects": [
+			{
+				"type": "statusUp",
+				"subject": "魔力",
+				"value": 3,
+				"numberType": "percent"
+			},
+			{
+				"type": "statusUp",
+				"subject": "死の魔法",
+				"value": 10
+			},
+			{
+				"type": "statusUp",
+				"subject": "暗黒命令",
+				"value": 10
+			}
+		],
+		"description": "魔力と死の魔法と暗黒命令の効果が上昇する"
 	},
 	{
 		"name": "アラビアン ダンサー",
-		"unedited": true,
-		"effects": [],
-		"description": ""
+		"effects": [
+			{
+				"type": "statusUp",
+				"subject": "ダンス",
+				"value": 20
+			},
+			{
+				"type": "statusUp",
+				"subject": "回避",
+				"value": 10,
+				"numberType": "percent"
+			},
+			{
+				"type": "costChange",
+				"subject": "ST",
+				"percent": 10
+			}
+		],
+		"description": "ダンスの効果と回避率が上昇して、スタミナの消費が軽減される"
 	},
 	{
 		"name": "魔法の簪",
-		"unedited": true,
-		"effects": [],
-		"description": ""
+		"effects": [
+			{
+				"type": "conversion",
+				"from": "魔力",
+				"to": "攻撃力",
+				"percent": 5
+			}
+		],
+		"description": "自分の魔力の5%を自分の攻撃力に加算する"
 	},
 	{
 		"name": "悪鬼羅刹",
-		"unedited": true,
-		"effects": [],
-		"description": ""
+		"effects": [
+			{
+				"type": "statusUp",
+				"subject": "物理与ダメージ",
+				"value": 5,
+				"numberType": "percent"
+			},
+			{
+				"type": "statusUp",
+				"subject": "魔法与ダメージ",
+				"value": 5,
+				"numberType": "percent"
+			},
+			{
+				"type": "statusUp",
+				"subject": "最大重量",
+				"value": 15,
+				"numberType": "percent"
+			}
+		],
+		"description": "物理ダメージと魔法ダメージの威力が少しずつ上昇して、所持可能重量が増加"
 	},
 	{
 		"name": "月夜見の加護",
-		"unedited": true,
-		"effects": [],
-		"description": ""
+		"effects": [
+			{
+				"type": "statusUp",
+				"subject": "死の魔法",
+				"value": 20
+			},
+			{
+				"type": "statusUp",
+				"subject": "スペル短縮",
+				"value": 15,
+				"numberType": "percent"
+			},
+			{
+				"type": "statusUp",
+				"subject": "MP自然回復",
+				"value": 42
+			}
+		],
+		"description": "死の魔法の効果と魔法の詠唱速度とMPの自然回復速度が上昇する"
 	},
 	{
 		"name": "レゾナンス ムーン",
-		"unedited": true,
-		"effects": [],
-		"description": ""
+		"effects": [
+			{
+				"type": "statusUp",
+				"subject": "破壊",
+				"value": 10
+			},
+			{
+				"type": "statusUp",
+				"subject": "強化",
+				"value": 10
+			},
+			{
+				"type": "statusUp",
+				"subject": "神秘",
+				"value": 10
+			},
+			{
+				"type": "statusUp",
+				"subject": "回復",
+				"value": 10
+			},
+			{
+				"type": "statusUp",
+				"subject": "最大重量",
+				"value": -75,
+				"numberType": "percent"
+			},
+			{
+				"type": "statusUp",
+				"subject": "所持重量",
+				"value": -83.3333,
+				"numberType": "percent"
+			}
+		],
+		"description": "三日月の魔力と共振することで破壊/強化/神秘/回復魔法の効果を増幅させる さらに月の影響を受けて最大所持重量が1/4になるが持ち物の重さが1/6になる"
 	},
 	{
 		"name": "殲滅の魔術師",
 		"effects": [
-			{ "type": "statusUp", "subject": "破壊", "value": 15 },
-			{ "type": "statusUp", "subject": "死魔", "value": 15 }
+			{
+				"type": "statusUp",
+				"subject": "破壊",
+				"value": 15
+			},
+			{
+				"type": "statusUp",
+				"subject": "死の魔法",
+				"value": 15
+			}
 		],
 		"description": "破壊魔法と死の魔法の効果が15上昇する ※WarAgeでは効果がない"
 	},
 	{
 		"name": "魔法の封蝋",
-		"effects": [{ "type": "technique", "subject": "リリース オブ マジック" }],
+		"effects": [
+			{
+				"type": "technique",
+				"subject": "リリース オブ マジック"
+			}
+		],
 		"description": "専用技『 リリース オブ マジック 』が使用可能になる"
 	},
 	{
@@ -8685,7 +10449,7 @@
 			{
 				"type": "reflection",
 				"subject": "魔法攻撃",
-				"ratio": 1,
+				"percent": 100,
 				"probability": 0.2
 			}
 		],
@@ -8709,7 +10473,7 @@
 			{
 				"type": "prevent",
 				"subject": "火属性",
-				"ratio": "未検証"
+				"percent": "未検証"
 			}
 		],
 		"description": "攻撃力と火属性のダメージが上昇して、火属性のダメージを軽減する"
@@ -8767,10 +10531,18 @@
 				"type": "conversion",
 				"from": "魔力",
 				"to": "攻撃力",
-				"ratio": 0.1
+				"percent": 10
 			},
-			{ "type": "statusUp", "subject": "筋力", "value": 20 },
-			{ "type": "statusUp", "subject": "最大重量", "value": 30 }
+			{
+				"type": "statusUp",
+				"subject": "筋力",
+				"value": 20
+			},
+			{
+				"type": "statusUp",
+				"subject": "最大重量",
+				"value": 30
+			}
 		],
 		"description": "リアクターの効果で魔力の10%を攻撃力に変換し、筋力依存の効果と所持可能重量を増加させる"
 	},
@@ -8783,18 +10555,32 @@
 				"value": 5,
 				"numberType": "percent"
 			},
-			{ "type": "statusUp", "subject": "破壊", "value": 15 }
+			{
+				"type": "statusUp",
+				"subject": "破壊",
+				"value": 15
+			}
 		],
 		"description": "最大MPと破壊魔法の効果が上昇する"
 	},
 	{
 		"name": "しいたけ フォーム",
-		"effects": [{ "type": "transform", "subject": "しいたけ" }],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "しいたけ"
+			}
+		],
 		"description": "しいたけに変身できる"
 	},
 	{
 		"name": "ハロウィン キャット フォーム",
-		"effects": [{ "type": "transform", "subject": "ハロウィン キャット" }],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "ハロウィン キャット"
+			}
+		],
 		"description": "ハロウィン キャットに変身できる"
 	},
 	{
@@ -8807,7 +10593,7 @@
 			},
 			{
 				"type": "statusUp",
-				"subject": "死魔",
+				"subject": "死の魔法",
 				"value": 15
 			}
 		],
@@ -8865,12 +10651,22 @@
 	},
 	{
 		"name": "ふぃにゅましゅ フォーム",
-		"effects": [{ "type": "transform", "subject": "ふぃにゅましゅ" }],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "ふぃにゅましゅ"
+			}
+		],
 		"description": ""
 	},
 	{
 		"name": "ぷるるーむましゅ フォーム",
-		"effects": [{ "type": "transform", "subject": "ぷるるーむましゅ" }],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "ぷるるーむましゅ"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -8885,14 +10681,19 @@
 			{
 				"type": "prevent",
 				"subject": "魔法攻撃",
-				"ratio": 15
+				"percent": 15
 			}
 		],
 		"description": "攻撃力に依存するダメージが増加して、魔法ダメージを15%軽減する"
 	},
 	{
 		"name": "こましゅ フォーム",
-		"effects": [{ "type": "transform", "subject": "こましゅ" }],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "こましゅ"
+			}
+		],
 		"description": ""
 	},
 	{
@@ -8901,7 +10702,7 @@
 			{
 				"type": "prevent",
 				"subject": "水中呼吸減少",
-				"ratio": 100
+				"percent": 100
 			},
 			{
 				"type": "statusUp",
@@ -9030,7 +10831,7 @@
 			{
 				"type": "prevent",
 				"subject": "魔法攻撃",
-				"ratio": 25
+				"percent": 25
 			},
 			{
 				"type": "statusUp",
@@ -9043,17 +10844,32 @@
 	},
 	{
 		"name": "アイラ フォーム",
-		"effects": [{ "type": "transform", "subject": "アイラ" }],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "アイラ"
+			}
+		],
 		"description": "アイラに変身できる"
 	},
 	{
 		"name": "アイラ(人型) フォーム",
-		"effects": [{ "type": "transform", "subject": "アイラ(人型)" }],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "アイラ(人型)"
+			}
+		],
 		"description": "アイラ(人型)に変身できる"
 	},
 	{
 		"name": "ゆめくじら フォーム",
-		"effects": [{ "type": "transform", "subject": "ゆめくじら" }],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "ゆめくじら"
+			}
+		],
 		"description": "ゆめくじらに変身できる"
 	},
 	{
@@ -9065,24 +10881,43 @@
 				"value": 5,
 				"numberType": "percent"
 			},
-			{ "type": "prevent", "subject": "病気", "ratio": 100 },
-			{ "type": "prevent", "subject": "毒", "ratio": 100 }
+			{
+				"type": "prevent",
+				"subject": "病気",
+				"percent": 100
+			},
+			{
+				"type": "prevent",
+				"subject": "毒",
+				"percent": 100
+			}
 		],
 		"description": "最大HPが5%上昇して、病気や毒に対して強い耐性を得る"
 	},
 	{
 		"name": "ドール ポーズ",
 		"effects": [
-			{ "type": "standMotionChange" },
+			{
+				"type": "standMotionChange"
+			},
 			{
 				"type": "statusUp",
 				"subject": "サイズ",
 				"value": -50,
 				"numberType": "percent"
 			},
-			{ "type": "prohibit", "subject": "移動" },
-			{ "type": "prohibit", "subject": "テクニック" },
-			{ "type": "friendship", "all": true }
+			{
+				"type": "prohibit",
+				"subject": "移動"
+			},
+			{
+				"type": "prohibit",
+				"subject": "テクニック"
+			},
+			{
+				"type": "friendship",
+				"all": true
+			}
 		],
 		"description": "フィギュアのようなポーズ※モーション中は敵に襲われにくくなる"
 	},
@@ -9104,7 +10939,12 @@
 	},
 	{
 		"name": "フューチャードロイド フォーム",
-		"effects": [{ "type": "transform", "subject": "フューチャードロイド" }],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "フューチャードロイド"
+			}
+		],
 		"description": "フューチャードロイドに変身できる"
 	},
 	{
@@ -9156,7 +10996,7 @@
 			{
 				"type": "prevent",
 				"subject": "ペット死亡時忠誠減少",
-				"ratio": 50
+				"percent": 50
 			}
 		],
 		"description": "神秘魔法の効果とクリティカル率と詠唱妨害耐性が少し上昇して、ペット死亡時の忠誠度低下が半減する"
@@ -9306,7 +11146,11 @@
 	{
 		"name": "神獣玄武の加護",
 		"effects": [
-			{ "type": "statusUp", "subject": "破壊", "value": 5 },
+			{
+				"type": "statusUp",
+				"subject": "破壊",
+				"value": 5
+			},
 			{
 				"type": "statusUp",
 				"subject": "所持重量",
@@ -9333,7 +11177,7 @@
 			{
 				"type": "reflection",
 				"subject": "物理攻撃",
-				"ratio": 50,
+				"percent": 50,
 				"probability": 25
 			}
 		],
@@ -9342,9 +11186,20 @@
 	{
 		"name": "アウリオール",
 		"effects": [
-			{ "type": "prevent", "subject": "ステータス減少", "ratio": 100 },
-			{ "type": "statusUp", "subject": "最大重量", "value": 40 },
-			{ "type": "technique", "subject": "オリジン・フォース" }
+			{
+				"type": "prevent",
+				"subject": "ステータス減少",
+				"percent": 100
+			},
+			{
+				"type": "statusUp",
+				"subject": "最大重量",
+				"value": 40
+			},
+			{
+				"type": "technique",
+				"subject": "オリジン・フォース"
+			}
 		],
 		"description": "ステータスダウン効果を打ち消し、最大所持重量が増加する"
 	},
@@ -9525,7 +11380,10 @@
 				"subject": "ST自然回復",
 				"value": 56.2
 			},
-			{ "type": "technique", "subject": "アンリミテッド フォース" }
+			{
+				"type": "technique",
+				"subject": "アンリミテッド フォース"
+			}
 		],
 		"description": "竜王の加護により魔法の威力が増加して、スタミナの自然回復量が上昇する"
 	},
@@ -9589,7 +11447,12 @@
 	},
 	{
 		"name": "モルモット（緑） フォーム",
-		"effects": [{ "type": "transform", "subject": "モルモット（緑）" }],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "モルモット（緑）"
+			}
+		],
 		"description": "モルモット（緑）フォーム"
 	},
 	{
@@ -9681,7 +11544,10 @@
 				"value": 10,
 				"numberType": "percent"
 			},
-			{ "type": "others", "subject": "呼吸永続" }
+			{
+				"type": "others",
+				"subject": "呼吸永続"
+			}
 		],
 		"description": "水属性の効果が上昇し、水中で呼吸が可能になる"
 	},
@@ -9694,7 +11560,8 @@
 			{
 				"type": "statusUp",
 				"subject": "所持重量",
-				"value": 0.8
+				"value": -20,
+				"numberType": "percent"
 			}
 		],
 		"description": "待機モーションが変化して、持ち物の重さが軽くなる"
@@ -9759,21 +11626,31 @@
 				"value": 15
 			},
 			{
-				"type": "costRatio",
+				"type": "costChange",
 				"subject": "MP",
-				"value": 0.9
+				"percent": 90
 			}
 		],
 		"description": "MPの消費が軽減されて、回復魔法と神秘魔法の効果が上昇する"
 	},
 	{
 		"name": "ユエ フィニュ フォーム",
-		"effects": [{ "type": "transform", "subject": "ユエフィニュ" }],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "ユエフィニュ"
+			}
+		],
 		"description": "ユエフィニュに変身できる"
 	},
 	{
 		"name": "シア フィニュ フォーム",
-		"effects": [{ "type": "transform", "subject": "シアフィニュ" }],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "シアフィニュ"
+			}
+		],
 		"description": "シアフィニュに変身できる"
 	},
 	{
@@ -9794,8 +11671,8 @@
 			{
 				"type": "recovery",
 				"subject": "MP",
-				"value": 20,
-				"probability": 1
+				"percent": 20,
+				"probability": 100
 			}
 		],
 		"description": "火属性と風属性の効果が上昇し、ダメージを受けるとMPが回復する"
@@ -9841,14 +11718,23 @@
 	},
 	{
 		"name": "黒竜ティオ フォーム",
-		"effects": [{ "type": "transform", "subject": "黒竜ティオ" }],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "黒竜ティオ"
+			}
+		],
 		"description": "黒竜ティオに変身できる"
 	},
 	{
 		"name": "トンボの餌",
 		"effects": [
-			{ "type": "standMotionChange" },
-			{ "type": "moveMotionChange" },
+			{
+				"type": "standMotionChange"
+			},
+			{
+				"type": "moveMotionChange"
+			},
 			{
 				"type": "statusUp",
 				"subject": "移動速度",
@@ -9862,7 +11748,7 @@
 		"effects": [
 			{
 				"type": "statusUp",
-				"subject": "死魔",
+				"subject": "死の魔法",
 				"value": 15
 			},
 			{
@@ -9875,7 +11761,12 @@
 	},
 	{
 		"name": "タキシード犬 フォーム",
-		"effects": [{ "type": "transform", "subject": "タキシード犬" }],
+		"effects": [
+			{
+				"type": "transform",
+				"subject": "タキシード犬"
+			}
+		],
 		"description": "タキシード犬に変身できる"
 	},
 	{
